@@ -735,6 +735,149 @@ section.testimonials{
 }
 /*   === Testimonials Section Styling Ends ===   */
 
+
+/* Gallery Section Styles */
+.gallery {
+	padding: 3rem 1rem;
+	background-color: #bed0ee;; /* Light blue background */
+  }
+  
+  .gallery-container {
+	max-width: 1200px;
+	margin: 0 auto;
+  }
+  
+  .gallery-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+	gap: 1rem;
+  }
+  
+  .gallery-item {
+	overflow: hidden;
+	border-radius: 8px;
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+	transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .gallery-item img {
+	width: 100%;
+	height: auto;
+	display: block;
+  }
+  
+  .gallery-item:hover {
+	transform: scale(1.05);
+	box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  .section-header .header-text h1 {
+	text-align: center;
+	color: #003366; /* Dark blue */
+	margin-bottom: 0.5rem;
+  }
+  
+  .section-header .header-text p {
+	text-align: center;
+	color: #003366;
+	font-size: 1rem;
+	margin-bottom: 2rem;
+  }
+  /* Deget Location Section Styles */
+
+/* General Layout for Desktop */
+.locations-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.location-box {
+  width: 49%; /* Adjust the width to make them side by side */
+  border: 1px solid #ddd;
+  padding: 10px;
+  background-color: #f7f7f7;
+}
+
+.location-content {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.location-img {
+  flex: 1;
+}
+
+.location-img img {
+  width: 90%;
+  height: 90%;
+}
+
+.location-map {
+  flex: 1;
+}
+
+.location-map iframe {
+   width: 90%;
+  height: 90%;
+  border: none;
+}
+
+.view-map-btn {
+  display: inline-block;
+  background-color: #007BFF;
+  color: #fff;
+  padding: 10px 15px;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .locations-container {
+    display: block; /* Stacks the locations vertically on smaller screens */
+  }
+
+  .location-box {
+    width: 100%; /* Take full width on small screens */
+    margin-bottom: 20px; /* Adds some space between locations */
+  }
+
+  .location-content {
+    display: block; /* Stacks the content vertically */
+  }
+
+  .location-img,
+  .location-map {
+    width: 100%; /* Both the image and the map will take full width on mobile */
+    margin-bottom: 15px; /* Adds space between image and map */
+  }
+
+  .location-map iframe {
+    height: 250px; /* Reduce map height on mobile */
+  }
+
+  .view-map-btn {
+    width: 100%; /* Make the button full width */
+    text-align: center; /* Center the text in the button */
+  }
+}
+
+@media (max-width: 480px) {
+  .location-map iframe {
+    height: 200px; /* Further reduce the map height on very small screens */
+  }
+
+  .view-map-btn {
+    padding: 12px 20px; /* Larger padding for better touch accessibility */
+  }
+}
+
+  
+
 /*   === Footer Section Styling Starts ===   */
 section.footer{
 	width: 100%;

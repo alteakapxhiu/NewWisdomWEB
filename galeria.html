@@ -1,575 +1,134 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<!--  *****   Link To Custom CSS Style Sheet   *****  -->
-	<link rel="stylesheet" type="text/css" href="style.css">
+  <!-- Link To Custom CSS Style Sheet -->
+  <link rel="stylesheet" type="text/css" href="style.css">
 
-	<!--  *****   Link To Font Awsome Icons   *****  -->
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"/>
+  <!-- Link To Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"/>
 
-	<!--  *****   Link To Owl Carousel   *****  -->
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+  <!-- Link To Owl Carousel -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
 
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
-
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<title>New Wisdom Center</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>New Wisdom Center</title>
 </head>
 <body>
-<!--   *** Website Container Starts ***   -->
-<div class="website-container">
-	
-<!--   *** Home Section Starts ***   -->
-<section class="home" id="home">
-	<!--   === Main Navbar Starts ===   -->
-	<nav class="main-navbar">
-		<a href="#" class="logo">
-			<img src="images/home/logo.png" width="100px">
-		  </a>
-		  
+  <!-- Website Container Starts -->
+  <div class="website-container">
+    
+    <!-- Home Section Starts -->
+    <section class="home" id="home">
+      <nav class="main-navbar">
+        <a href="#" class="logo">
+          <img src="images/home/logo.png" width="100px">
+        </a>
 		<ul class="nav-list">
-			<li><a href="#home">Home</a></li>
-			<li><a href="#services">Sherbimet</a></li>
-			<li><a href="#courses">Kurset</a></li>
-			<li><a href="#categories">Rreth Nesh</a></li>
-			<li><a href="#testimonials">Kliente</a></li>
+			<li><a href="index.html">Kreu</a></li>
+			<li><a href="index.html#courses">Kurset</a></li>
+			<li><a href="index.html#services">Deget</a></li>
+			<li><a href="galeria.html">Galeria</a></li>
+			<li><a href="index.html#rrethnesh">Rreth Nesh</a></li>
+			<li><a href="index.html#instructor">Kontakt</a></li>
+			<li><a href="index.html#testimonials">Kliente</a></li>
+			<li><a href="staficv.html">Puno me ne</a></li>
 		</ul>
-		<a href="#" class="get-started-btn-container">
-			<button class="get-started-btn btn">Meso me shume</button>
-		</a>
-		<div class="menu-btn">
-			<span></span>
-		</div>
-	</nav>
-	<!--   === Main Navbar Ends ===   -->
-	<!--   === Banner Starts ===   -->
-	<div class="banner">
-		
-		<div class="banner-desc">
-			<h2>Qendra e Gjuheve te Huaja NEW WISDOM </h2>
-			<p>Mirësevini në një mjedis ku pasioni për gjuhët e huaja takohet me përkushtimin për mësimdhënie cilësore.<br> <br>Te NEW WISDOM, ju ndihmojmë të mësoni gjuhë të reja me metoda bashkëkohore, staf të kualifikuar dhe orare fleksibël që përshtaten me ritmin tuaj. Bashkohuni me ne për të zgjeruar horizontet tuaja!
-				</p>
-				<form class="search-bar" onsubmit="return false;">
-					<input type="search" id="searchInput" placeholder="Kerko Kursin">
-					<button type="button" onclick="redirectToCourse()">
-					  <i class="fa-solid fa-search"></i>
-					</button>
-				  </form>
-				  
-		</div>
+        <a href="#" class="get-started-btn-container">
+          <button class="get-started-btn btn">Meso me shume</button>
+        </a>
+        <div class="menu-btn">
+          <span></span>
+        </div>
+      </nav>
+      <div class="banner">
+		<section class="gallery" id="gallery">
 
-		<div class="banner-img">
-			<div class="banner-img-container">
-				<img src="images/home/student.png">
-
-				<div class="states">
-					<div class="total-courses">
-						<div class="icon">
-							<i class="fa-solid fa-book"></i>
-						</div>
-						<div class="desc">
-							<span>19+</span>
-							<span>Vjet Eksperience</span>
-						</div>
-					</div>
-
-					<div class="courses-ratings">
-						<span>4.7<i class="fa-solid fa-star"></i></span>
-						<span>Vleresuar</span>
-					</div>
+        <header class="section-header">
+			<div class="header-text">
+			  <h1>Galeria</h1>
+			  <p style="text-align: center;">Shikoni momentet më të mira nga kurset tona dhe mjediset tona të mësimit.</p>
+			</div>
+		  </header>
+			
+			<div class="gallery-container">
+			  <div class="gallery-grid">
+				<div class="gallery-item">
+					<img src="images/galeria/dukemesuar.jpeg" alt="Moment nga Kursi 1">
 				</div>
-
-				<div class="pattern">
-					<img src="images/home/pattern.png">
+				<div class="gallery-item">
+					<img src="images/galeria/projektor.jpeg" alt="Moment nga Kursi 2">
 				</div>
-
+				<div class="gallery-item">
+					<img src="images/galeria/teacher.jpeg" alt="Moment nga Kursi 3">
+				</div>
+				<div class="gallery-item">
+					<img src="images/galeria/mesimsolo.jpeg" alt="Moment nga Kursi 4">
+				</div>
+				<div class="gallery-item">
+					<img src="images/galeria/femijet.jpeg" alt="Moment nga Kursi 5">
+				</div>
+				<div class="gallery-item">
+					<img src="images/galeria/dukehyre.jpeg" alt="Moment nga Kursi 6">
+				</div>
+			  </div>
 			</div>
-		</div>
+		  </section>
+		  <!-- Gallery Section Ends -->
+        </div>
+		<!-- Side of banner text-->
+      </div>
+    </section>
+    <!-- Home Section Ends -->
 
-	</div>
-	<!--   === Banner Ends ===   -->
-</section>
-<!--   *** Home Section Ends ***   -->
+    
 
-<!--   *** Partners Section Starts ***   -->
-<section class="partners">
-	<h3>Kurse pergatitore per provimet vendase dhe nderkombetare te gjuheve </h3>
-	<div class="owl-carousel owl-theme partners-slider">
-
-    	<div class="item brand-item">
-    		<img src="images/brand-logos/matoontapa.png">
-    	</div>
-    	<div class="item brand-item">
-    		<img src="images/brand-logos/khostan.png">
-    	</div>
-    	<div class="item brand-item">
-    		<img src="images/brand-logos/etimadya.png">
-    	</div>
-    	<div class="item brand-item">
-    		<img src="images/brand-logos/torghar.png">
-    	</div>
-    	<div class="item brand-item">
-    		<img src="images/brand-logos/nadershakot.png">
-    	</div>
-    	<div class="item brand-item">
-    		<img src="images/brand-logos/almarah.png">
-    	</div>
-
-	</div>
-</section>
-<!--   *** Partners Section Ends ***   -->
-
-<!--   *** Services Section Starts ***   -->
-<section class="services" id="services">
-	<!--   *** Services Header Starts ***   -->
-	<header class="section-header">
-		<h1>Ne NEW WISDOM do te gjeni</h1>
-		<p>Te NEW WISDOM ofrojmë orare fleksibël, staf të kualifikuar dhe cilësi të lartë në mësimdhënie. Me përkushtim dhe profesionalizëm, ne ju ndihmojmë të arrini suksesin që meritoni. Bashkohuni me ne për një rrugëtim drejt dijes dhe zhvillimit!</p>
-	</header>
-	<!--   *** Services Header Ends ***   -->
-	<!--   *** Services Contents Starts ***   -->
-	<div class="services-contents">
-
-		<div class="service-box">
-			<div class="service-icon">
-				<i class="fa-solid fa-calendar"></i>
-			</div>
-			<div class="service-desc">
-				<h2>Kualitet ne Mesimdhenie</h2>
-				<p>Cilësia është prioriteti ynë kryesor në çdo aspekt të mësimdhënies. Ne përdorim metoda bashkëkohore për të siguruar një përvojë të dobishme dhe frytdhënëse për çdo student.</p>
-			</div>
-		</div>
-
-		<div class="service-box">
-			<div class="service-icon">
-				<i class="fa-solid fa-users"></i>
-			</div>
-			<div class="service-desc">
-				<h2>Staf te Specializuar</h2>
-				<p>Stafi ynë është i përkushtuar dhe i kualifikuar për të garantuar suksesin tuaj. Me ekspertizën dhe përvojën e tyre, ata janë gjithmonë pranë për t’ju udhëhequr dhe mbështetur.</p>
-			</div>
-		</div>
-
-		<div class="service-box">
-			<div class="service-icon">
-				<i class="fa-solid fa-clock"></i>
-			</div>
-			<div class="service-desc">
-				<h2>Orare Fleksibel</h2>
-				<p>Te NEW WISDOM, ne e kuptojmë rëndësinë e një orari që i përshtatet stilit tuaj të jetesës. Prandaj, ju ofrojmë fleksibilitet maksimal për të balancuar mësimin me angazhimet e tjera.</p>
-			</div>
-		</div>
-
-	</div>
-	<!--   *** Services Contents Ends ***   -->
-</section>
-<!--   *** Services Section Ends ***   -->
-
-<!--   *** Courses Section Starts ***   -->
-<section class="courses" id="courses">
-	<!--   *** Courses Header Starts ***   -->
-	<header class="section-header">
-		<div class="header-text">
-			<h1>Cfare kursesh ofrojme</h1>
-			<p>Te NEW WISDOM, ofrojmë një gamë të gjerë kursesh për t'ju ndihmuar të arrini qëllimet tuaja. Kurset tona janë të dizajnuara për t'ju ofruar njohuri të thelluara dhe aftësi praktike në komunikim.</p>
-		</div>
-		<button class="courses-btn btn">View All</button>
-	</header>
-	<!--   *** Courses Header Ends ***   -->
-	<!--   *** Courses Contents Starts ***   -->
-	<div class="course-contents">
-        <a href="./anglisht.html" style="text-decoration: none; color: inherit;">
-            <div class="course-card">
-              <img src="images/courses/anglisht.jpg" alt="Anglisht Course">
-              <div class="category">
-                <div class="subject"><h3>Anglisht</h3></div>
-                <img src="images/courses/teacher-1.jpg" alt="Teacher Image">
-              </div>
-              <h2 class="course-title">Anglisht Fillestar A1-A2</h2>
-              <div class="course-desc">
-                <span><i class="fa-solid fa-video"></i> xx Seanca</span>
-                <span><i class="fa-solid fa-users"></i> Grup/Individual</span>
-              </div>
-              <div class="course-ratings">
-                <span>4.9 <i class="fa-solid fa-star"></i></span>
-                <span><b>Cmimi</b> Sipas Nivelit</span>
-              </div>
+    <!-- Footer Section Starts -->
+    <section class="footer" id="footer">
+      <div class="footer-contents">
+        <div class="footer-col footer-col-1">
+          <div class="col-title">
+            <img src="images/home/logo.png">
+          </div>
+          <div class="col-contents">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          </div>
+        </div>
+        <div class="footer-col footer-col-2">
+          <div class="col-title">
+            <h3>Contact</h3>
+          </div>
+          <div class="col-contents">
+            <div class="contact-row">
+              <span>Address</span>
+              <span>Tirane, Kombinat</span>
             </div>
-          </a>
-          
-
-		<div class="course-card">
-			<img src="images/courses/anglisht.jpg">
-			<div class="category">
-				<div class="subject"><h3>Anglisht</h3></div>
-				<img src="images/courses/teacher-1.jpg">
-			</div>
-			<h2 class="course-title">Anglisht Mesatar B1-B2</h2>
-			<div class="course-desc">
-				<span><i class="fa-solid fa-video"></i> xx Seanca</span>
-				<span><i class="fa-solid fa-users"></i> Grup/Individual</span>
-			</div>
-			<div class="course-ratings">
-				<span>4.9 <i class="fa-solid fa-star"></i></span>
-				<span><b>Cmimi</b>Sipas Nivelit</span>
-			</div>
-		</div>
-
-		<div class="course-card">
-			<img src="images/courses/anglisht.jpg">
-			<div class="category">
-				<div class="subject"><h3>Anglisht</h3></div>
-				<img src="images/courses/teacher-1.jpg">
-			</div>
-			<h2 class="course-title">Anglisht Advanc C1-C2</h2>
-			<div class="course-desc">
-				<span><i class="fa-solid fa-video"></i> xx Seanca</span>
-				<span><i class="fa-solid fa-users"></i> Grup/Individual</span>
-			</div>
-			<div class="course-ratings">
-				<span>4.9 <i class="fa-solid fa-star"></i></span>
-				<span><b>Cmimi</b>Sipas Nivelit</span>
-			</div>
-		</div>
-
-		<div class="course-card">
-			<img src="images/courses/anglisht.jpg">
-			<div class="category">
-				<div class="subject"><h3>Italisht</h3></div>
-				<img src="images/courses/teacher-1.jpg">
-			</div>
-			<h2 class="course-title">Italisht Fillestar C1-C2</h2>
-			<div class="course-desc">
-				<span><i class="fa-solid fa-video"></i> xx Seanca</span>
-				<span><i class="fa-solid fa-users"></i> Grup/Individual</span>
-			</div>
-			<div class="course-ratings">
-				<span>4.9 <i class="fa-solid fa-star"></i></span>
-				<span><b>Cmimi</b>Sipas Nivelit</span>
-			</div>
-		</div>
-
-		<div class="course-card">
-			<img src="images/courses/anglisht.jpg">
-			<div class="category">
-				<div class="subject"><h3>Anglisht</h3></div>
-				<img src="images/courses/teacher-1.jpg">
-			</div>
-			<h2 class="course-title">Anglisht Advanc C1-C2</h2>
-			<div class="course-desc">
-				<span><i class="fa-solid fa-video"></i> xx Seanca</span>
-				<span><i class="fa-solid fa-users"></i> Grup/Individual</span>
-			</div>
-			<div class="course-ratings">
-				<span>4.9 <i class="fa-solid fa-star"></i></span>
-				<span><b>Cmimi</b>Sipas Nivelit</span>
-			</div>
-		</div>
-
-		<div class="course-card">
-			<img src="images/courses/anglisht.jpg">
-			<div class="category">
-				<div class="subject"><h3>Anglisht</h3></div>
-				<img src="images/courses/teacher-1.jpg">
-			</div>
-			<h2 class="course-title">Anglisht Advanc C1-C2</h2>
-			<div class="course-desc">
-				<span><i class="fa-solid fa-video"></i> xx Seanca</span>
-				<span><i class="fa-solid fa-users"></i> Grup/Individual</span>
-			</div>
-			<div class="course-ratings">
-				<span>4.9 <i class="fa-solid fa-star"></i></span>
-				<span><b>Cmimi</b>Sipas Nivelit</span>
-			</div>
-		</div>
-
-	</div>
-	<!--   *** Courses Contents Ends ***   -->
-</section>
-<!--   *** Courses Section Ends ***   -->
-
-<!--   *** Courses Categories Section Starts ***   -->
-<section class="categories" id="categories">
-	<!--   === Categories Section Header Starts ===   -->
-	<header class="section-header">
-		<h1>Shfleto Kurset ne baze te Gjuhes</h1>
-		<p>Zgjidhni nga një gamë e gjerë kursesh të disponueshme në gjuhën që ju përshtatet më së miri. Ne ofrojmë mundësi për të mësuar në disa gjuhë, duke e bërë mësimin më të lehtë dhe të aksesueshëm për ju.</p>
-	</header>
-	<!--   === Categories Section Header Ends ===   -->
-	<!--   === Categories Section Contents Starts ===   -->
-	<div class="categories-contents">
-		<a href="./anglisht.html" style="text-decoration: none; color: inherit;" onclick="window.location.href='anglisht.html'; return false;">
-  <div class="category-item">
-    <div class="category-icon">
-      <img src="https://upload.wikimedia.org/wikipedia/en/a/ae/Flag_of_the_United_Kingdom.svg" alt="UK Flag" width="30" height="20" />
-    </div>
-    <div class="category-desc">
-      <h3>Kurse Anglisht</h3>
-      <p>
-        Nivele A1 - C2 <br> 
-        Përgatitje për maturën shtetërore <br>
-        Për çdo grupmoshë dhe nivel<br> 
-        Orë fleksibël <br> 
-        Online & Fizikisht<br>
-        Përgatitje për provimet ndërkombëtare TOEFL / IELTS / CAE / FCE<br>
-        Pajisje me certifikatë në fund të çdo niveli
-      </p>
-    </div>
+            <div class="contact-row">
+              <span>Telefon</span>
+              <span>+355 67 447 4166</span>
+            </div>
+            <div class="contact-row">
+              <span>Email</span>
+              <span>info@newwisdom.com</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="copy-rights">
+        <p>Created By <b>Altea K.</b> All Rights Reserved</p>
+      </div>
+    </section>
+    <!-- Footer Section Ends -->
   </div>
-</a>
+  <!-- Website Container Ends -->
 
-          
-		<div class="category-item">
-			<div class="category-icon">
-				<img src="https://upload.wikimedia.org/wikipedia/commons/0/03/Flag_of_Italy.svg" alt="Italian Flag" width="30" height="20" />
-			  </div>
-			  
-			<div class="category-desc">
-				<h3>Kurse Italisht</h3>
-				<p>Nivele A1 - B2 <br> Pergatitje per maturen shtetore <br>Per cdo Grupmoshe dhe nivel<br> Orare Fleksibel <br> Online & Fizikisht<br>Pergatitje per provimet nderkombetare 
-					CELI <br>Pajisje me certefikate ne fund te cdo niveli</p>
-			</div>
-		</div>
+  <!-- Link To JQuery -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
 
-		<div class="category-item">
-			<div class="category-icon">
-				<img src="https://upload.wikimedia.org/wikipedia/commons/b/ba/Flag_of_Germany.svg" alt="German Flag" width="30" height="20" />
-			  </div>
-			  
-			<div class="category-desc">
-				<h3>Kurse Gjermanisht</h3>
-				<p>Nivele A1 - B2 <br> Pergatitje per maturen shtetore <br>Per cdo Grupmoshe dhe nivel<br> Orare Fleksibel <br> Online & Fizikisht<br>Pajisje me certefikate ne fund te cdo niveli</p>
-			</div>
-		</div>
+  <!-- Link To Owl Carousel -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
 
-		<div class="category-item">
-			<div class="category-icon">
-				<i class="fa-solid fa-desktop"></i>
-			  </div>
-			  
-			<div class="category-desc">
-				<h3>Kurse Kompjuter</h3>
-				<p>Nivelet Baze  <br>Per cdo Grupmoshe<br> Orare Fleksibel <br> Online & Fizikisht<br>Pajisje me certefikate ne fund te cdo niveli</p>
-			</div>
-		</div>
-
-	</div>
-	<!--   === Categories Section Contents Ends ===   -->
-</section>
-<!--   *** Courses Categories Section Ends ***   -->
-
-<!--   *** Teacher Section Starts ***   -->
-<section class="instructor">
-	<div class="instructor-container">
-		<h2>Na Kontaktoni ! </h2>
-		<p>Dëshironi të merrni informacion më të personalizuar rreth nevojave tuaja?  
-			Ne jemi këtu për t'ju ofruar informacion dhe këshilla të përshtatura sipas kërkesave dhe objektivave tuaj. Mos hezitoni të na kontaktoni për t'u ndihmuar në çdo hap të rrugëtimit tuaj!</p>
-		<button class="teacher-btn btn">
-			<i class="fab fa-instagram"></i> Na Kontakto
-		  </button>
-		  <button class="teacher-btn btn">
-			 <i class="fab fa-whatsapp"></i> Na Kontakto
-		  </button>
-		  
-	</div>
-</section>
-<!--   *** Teacher Section Ends ***   -->
-
-<!--   *** Testimonials Section Starts ***   -->
-<section class="testimonials" id="testimonials">
-	<!--   === Testimonials Section Header Starts ===   -->
-	<header class="section-header">
-		<h1>Cfare thone klientet tane ?</h1>
-		<p>Çfarë thonë klientët tanë ? 
-			Këtu mund të lexoni mendimet dhe përshtypjet e klientëve tanë, të cilët theksojnë cilësinë, mbështetjen profesionale dhe fleksibilitetin që ofrojmë.</p>
-	</header>
-	<!--   === Testimonials Section Header Ends ===   -->
-	<!--   === Testimonials Contents Starts ===   -->
-	<div class="owl-carousel owl-theme testimonials-slider">
-
-    	
-
-
-    	<div class="item testimonials-item">
-    		<div class="profile">
-    			<div class="profile-image">
-    				<img src="images/testimonials/student-1.jpg">
-    			</div>
-    			<div class="profile-desc">
-    				<span>Arla D.</span>
-    				<span>Ndoqi kursin e Anglishtes</span>
-    			</div>
-    		</div>
-    		<p>Fiks si duhet! 👏
-				Erdha per t’i përmiresuar pak aftesite e mia, por u ndjeva sikur e rifillova nga e para. Ne vetem dy muaj ndjeva ndryshimin. Zysha e ben mesimin super te thjesht dhe te kapshem.Kursi ishte shume efektiv. 5 yje!</p>
-    		<div class="quote">
-    			<i class="fa fa-quote-left"></i>
-    		</div>
-    		<div class="ratings">
-    			<i class="fa-solid fa-star"></i>
-    			<i class="fa-solid fa-star"></i>
-    			<i class="fa-solid fa-star"></i>
-    			<i class="fa-solid fa-star"></i>
-    			<i class="fa-solid fa-star"></i>
-    		</div>
-    	</div>
-
-    	<div class="item testimonials-item">
-    		<div class="profile">
-    			<div class="profile-image">
-    				<img src="images/testimonials/student-1.jpg">
-    			</div>
-    			<div class="profile-desc">
-    				<span>Adrion L.</span>
-    				<span>Ndoqi kursin e Italishtes</span>
-    			</div>
-    		</div>
-    		<p>Kam qene gjithmone pak i dobet me italishten, po zysha vallaj me ka ndihmuar shume.Dola vertet shume mire ne provimin e matures neItalisht dhe jam shume i lumtur. Ke qendra juj kam pas nje eksperience shume pozitive !</p>
-    		<div class="quote">
-    			<i class="fa fa-quote-left"></i>
-    		</div>
-    		<div class="ratings">
-    			<i class="fa-solid fa-star"></i>
-    			<i class="fa-solid fa-star"></i>
-    			<i class="fa-solid fa-star"></i>
-    			<i class="fa-solid fa-star"></i>
-    			<i class="fa-solid fa-star"></i>
-    		</div>
-    	</div>
-
-    	<div class="item testimonials-item">
-    		<div class="profile">
-    			<div class="profile-image">
-    				<img src="images/testimonials/student-1.jpg">
-    			</div>
-    			<div class="profile-desc">
-    				<span>Megi K.</span>
-    				<span>Ndoqi kursin e Anglishtes</span>
-    			</div>
-    		</div>
-    		<p> 🔥Këtu nuk ke vend per te mos mesuar haha. Zysha te ndihmon shume dhe ben çdo gje qe ta kuptosh. Me ka ndihmuar shume sinqerisht dhe kam ndermend te vazhdoj deri ne fund se vertet ia vlen.</p>
-    		<div class="quote">
-    			<i class="fa fa-quote-left"></i>
-    		</div>
-    		<div class="ratings">
-    			<i class="fa-solid fa-star"></i>
-    			<i class="fa-solid fa-star"></i>
-    			<i class="fa-solid fa-star"></i>
-    			<i class="fa-solid fa-star"></i>
-    			<i class="fa-solid fa-star"></i>
-    		</div>
-    	</div>
-
-		<div class="item testimonials-item">
-    		<div class="profile">
-    			<div class="profile-image">
-    				<img src="images/testimonials/student-1.jpg">
-    			</div>
-    			<div class="profile-desc">
-    				<span>Emerilda S.</span>
-    				<span>Ndoqi kursin e Italishtes</span>
-    			</div>
-    		</div>
-    		<p> Perfekt fare! 10/10 ⭐ Kursi eshte super praktik dhe zyshat jane shume te <br>komunikueshme.<br>Me ka pelqyer shume!</p>
-    		<div class="quote">
-    			<i class="fa fa-quote-left"></i>
-    		</div>
-    		<div class="ratings">
-    			<i class="fa-solid fa-star"></i>
-    			<i class="fa-solid fa-star"></i>
-    			<i class="fa-solid fa-star"></i>
-    			<i class="fa-solid fa-star"></i>
-    			<i class="fa-solid fa-star"></i>
-    		</div>
-    	</div>
-
-	</div>
-	<!--   === Testimonials Contents Ends ===   -->
-</section>
-<!--   *** Testimonials Section Ends ***   -->
-
-<!--   *** Footer Section Starts ***   -->
-<section class="footer" id="footer">
-	
-	<!--   === Footer Contents Starts ===   -->
-	<div class="footer-contents">
-		
-		<div class="footer-col footer-col-1">
-			<div class="col-title">
-				<img src="images/home/logo.png">
-			</div>
-			<div class="col-contents">
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
-			</div>
-		</div>
-
-		<div class="footer-col footer-col-2">
-			<div class="col-title">
-				<h3>Contact</h3>
-			</div>
-			<div class="col-contents">
-				<div class="contact-row">
-					<span>Address</span>
-					<span>Tirane,Kombinat - Prane shkolles Betim Muco</span>
-					<span>Elbasan - Rruga Egnatia,Lagja pas kalase</span>
-
-				</div>
-				<div class="contact-row">
-					<span>Telefon</span>
-					<span>Tirane,Kombinat  +355 67 447 4166</span>
-					<span>Elbasan  +355 67 371 0166</span>
-				</div>
-				<div class="contact-row">
-					<span>Instagram</span>
-					<span>@newwisdomelbasan</span>
-					<span>@newwisdomkombinat</span>
-
-				</div>
-				<div class="contact-row">
-					<span>Email</span>
-					<span>info@Five-Star-Tutorials.com</span>
-				</div>
-			</div>
-		</div>
-
-		<div class="footer-col footer-col-3">
-			<div class="col-title">
-				<h3>Zbuloni me shume!</h3>
-			</div>
-			<div class="col-contents">
-				<a href="#">Kreu</a>
-				<a href="#">Sherbimet</a>
-				<a href="#">Kurset</a>
-				<a href="#">Rreth Nesh</a>
-				<a href="#">Kliente</a>
-			</div>
-		</div>
-
-		
-
-	</div>
-	<!--   === Footer Contents Ends ===   -->
-	<div class="copy-rights">
-		<p>Created By <b>Altea K.</b> All Rights Reserved</p>
-	</div>
-
-</section>
-<!--   *** Footer Section Ends ***   -->
-
-
-</div>
-<!--   *** Website Container Ends ***   -->
-
-
-
-<!--   *** Link To JQuery ***   -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
-
-<!--   *** Link To Owl Carousel ***   -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-
-<!--   *** Link To Curstom Script File ***   -->
-<script type="text/javascript" src="script.js"></script>
+  <!-- Link To Custom Script File -->
+  <script type="text/javascript" src="script.js"></script>
 </body>
 </html>
