@@ -23,7 +23,7 @@
 <section class="home" id="home">
 	<!--   === Main Navbar Starts ===   -->
 	<nav class="main-navbar">
-		<a href="#" class="logo">
+		<a href="index.html" class="logo">
   <img src="images/home/logo.png" width="100px">
 </a>
 
@@ -33,7 +33,7 @@
 			<li><a href="deget.html">Pikat</a></li>
 			<li><a href="galeria.html">Galeria</a></li>
 			<li><a href="index.html#rrethnesh">Rreth Nesh</a></li>
-			<li><a href="index.html#kontakt">Kontakt</a></li>
+			<li><a href="kontakt.html">Kontakt</a></li>
 			<li><a href="index.html#kliente">Kliente</a></li>
 			<li><a href="staficv.html">Puno me ne</a></li>
 		</ul>
@@ -124,6 +124,43 @@
 
 
 <!--   *** Courses Section Starts ***   -->
+<script>
+	document.addEventListener("DOMContentLoaded", function () {
+	  const courses = document.querySelectorAll(".course-card");
+	  const viewAllButton = document.querySelector(".courses-btn");
+	  
+	  // Show the first three courses by default
+	  for (let i = 0; i < 3; i++) {
+		if (courses[i]) courses[i].classList.add("visible");
+	  }
+	  
+	  // Toggle visibility on button click
+	  viewAllButton.addEventListener("click", () => {
+		const hiddenCourses = Array.from(courses).filter(
+		  (course) => !course.classList.contains("visible")
+		);
+		
+		if (hiddenCourses.length > 0) {
+		  hiddenCourses.forEach((course) => course.classList.add("visible"));
+		  viewAllButton.textContent = "Shiko me pak"; // Update button text
+		} else {
+		  courses.forEach((course, index) => {
+			if (index >= 3) course.classList.remove("visible");
+		  });
+		  viewAllButton.textContent = "Shiko Te Tera"; // Revert button text
+		}
+	  });
+	});
+  </script>
+  <style>
+	.course-card {
+	  display: none; /* Hide all courses by default */
+	}
+	.course-card.visible {
+	  display: block; /* Show only visible courses */
+	}
+  </style>
+  
 <section class="courses" id="courses">
 	<!--   *** Courses Header Starts ***   -->
 	<header class="section-header">
@@ -131,118 +168,91 @@
 			<h1>Cfare kursesh ofrojme</h1>
 			<p>Te NEW WISDOM, ofrojmë një gamë të gjerë kursesh për t'ju ndihmuar të arrini qëllimet tuaja. Kurset tona janë të dizajnuara për t'ju ofruar njohuri të thelluara dhe aftësi praktike në komunikim.</p>
 		</div>
-		<button class="courses-btn btn">View All</button>
+		<button class="courses-btn btn">Shiko Te Tera</button>
 	</header>
 	<!--   *** Courses Header Ends ***   -->
 	<!--   *** Courses Contents Starts ***   -->
 	<div class="course-contents">
+
+  <a href="anglisht.html" style="text-decoration: none;" class="course-card">
+    <img src="images/courses/anglisht.png">
+    <div class="category">
+      <div class="subject"><h3>Anglisht</h3></div>
+      <img src="images/courses/Ang_Flag.jpg">
+    </div>
+    <h2 class="course-title">Anglisht te gjitha Nivelet</h2>
+    <div class="course-desc">
+      <span><i class="fa-solid fa-video"></i> xx Seanca</span>
+      <span><i class="fa-solid fa-users"></i> Grup/Individual</span>
+    </div>
+    <div class="course-ratings">
+      <span>4.9 <i class="fa-solid fa-star"></i></span>
+	  <span><b></b>Cmimi Sipas Nivelit</span>
+    </div>
+  </a>
+
+  <a href="italisht.html" style="text-decoration: none;" class="course-card">
+    <img src="images/courses/italisht.png">
+    <div class="category">
+      <div class="subject"><h3>Italisht</h3></div>
+      <img src="images/courses/IT_Flag.png">
+    </div>
+    <h2 class="course-title">Italisht te gjitha Nivelet</h2>
+    <div class="course-desc">
+      <span><i class="fa-solid fa-video"></i> xx Seanca</span>
+      <span><i class="fa-solid fa-users"></i> Grup/Individual</span>
+    </div>
+    <div class="course-ratings">
+      <span>4.9 <i class="fa-solid fa-star"></i></span>
+	  <span><b></b>Cmimi Sipas Nivelit</span>
+    </div>
+  </a>
+
+  <a href="gjermanisht.html" style="text-decoration: none;" class="course-card">
+	<img src="images/courses/gjermanisht.png">
+			<div class="category">
+				<div class="subject"><h3>Gjermanisht</h3></div>
+				<img src="images/courses/GR_Flag.png">
+			</div>
+			<h2 class="course-title">Gjermanisht te gjitha Nivelet</h2>
+			<div class="course-desc">
+				<span><i class="fa-solid fa-video"></i> xx Seanca</span>
+				<span><i class="fa-solid fa-users"></i> Grup/Individual</span>
+			</div>
+			<div class="course-ratings">
+				<span>4.9 <i class="fa-solid fa-star"></i></span>
+				<span><b></b>Cmimi Sipas Nivelit</span>
+			</div>
+		</a>
+
+
+		<a href="kompjuter.html" style="text-decoration: none;" class="course-card">
+			<img src="images/courses/anglisht.jpg">
+			<div class="category">
+				<div class="subject"><h3>Kompjuter</h3></div>
+				<img src="images/courses/PC_Flag.png">
+			</div>
+			<h2 class="course-title">Kompjuter te gjitha Nivelet</h2>
+			<div class="course-desc">
+				<span><i class="fa-solid fa-video"></i> xx Seanca</span>
+				<span><i class="fa-solid fa-users"></i> Grup/Individual</span>
+			</div>
+			<div class="course-ratings">
+				<span>4.9 <i class="fa-solid fa-star"></i></span>
+				<span><b></b>Cmimi Sipas Nivelit</span>
+			</div>
+		</a>
+
 		
-		<div class="course-card">
-			<img src="images/courses/anglisht.jpg">
-			<div class="category">
-				<div class="subject"><h3>Anglisht</h3></div>
-				<img src="images/courses/teacher-1.jpg">
-			</div>
-			<h2 class="course-title">Anglisht Fillestar A1-A2</h2>
-			<div class="course-desc">
-				<span><i class="fa-solid fa-video"></i> xx Seanca</span>
-				<span><i class="fa-solid fa-users"></i> Grup/Individual</span>
-			</div>
-			<div class="course-ratings">
-				<span>4.9 <i class="fa-solid fa-star"></i></span>
-				<span><b>Cmimi</b>Sipas Nivelit</span>
-			</div>
-		</div>
-
-		<div class="course-card">
-			<img src="images/courses/anglisht.jpg">
-			<div class="category">
-				<div class="subject"><h3>Anglisht</h3></div>
-				<img src="images/courses/teacher-1.jpg">
-			</div>
-			<h2 class="course-title">Anglisht Mesatar B1-B2</h2>
-			<div class="course-desc">
-				<span><i class="fa-solid fa-video"></i> xx Seanca</span>
-				<span><i class="fa-solid fa-users"></i> Grup/Individual</span>
-			</div>
-			<div class="course-ratings">
-				<span>4.9 <i class="fa-solid fa-star"></i></span>
-				<span><b>Cmimi</b>Sipas Nivelit</span>
-			</div>
-		</div>
-
-		<div class="course-card">
-			<img src="images/courses/anglisht.jpg">
-			<div class="category">
-				<div class="subject"><h3>Anglisht</h3></div>
-				<img src="images/courses/teacher-1.jpg">
-			</div>
-			<h2 class="course-title">Anglisht Advanc C1-C2</h2>
-			<div class="course-desc">
-				<span><i class="fa-solid fa-video"></i> xx Seanca</span>
-				<span><i class="fa-solid fa-users"></i> Grup/Individual</span>
-			</div>
-			<div class="course-ratings">
-				<span>4.9 <i class="fa-solid fa-star"></i></span>
-				<span><b>Cmimi</b>Sipas Nivelit</span>
-			</div>
-		</div>
-
-		<div class="course-card">
-			<img src="images/courses/anglisht.jpg">
-			<div class="category">
-				<div class="subject"><h3>Italisht</h3></div>
-				<img src="images/courses/teacher-1.jpg">
-			</div>
-			<h2 class="course-title">Italisht Fillestar C1-C2</h2>
-			<div class="course-desc">
-				<span><i class="fa-solid fa-video"></i> xx Seanca</span>
-				<span><i class="fa-solid fa-users"></i> Grup/Individual</span>
-			</div>
-			<div class="course-ratings">
-				<span>4.9 <i class="fa-solid fa-star"></i></span>
-				<span><b>Cmimi</b>Sipas Nivelit</span>
-			</div>
-		</div>
-
-		<div class="course-card">
-			<img src="images/courses/anglisht.jpg">
-			<div class="category">
-				<div class="subject"><h3>Anglisht</h3></div>
-				<img src="images/courses/teacher-1.jpg">
-			</div>
-			<h2 class="course-title">Anglisht Advanc C1-C2</h2>
-			<div class="course-desc">
-				<span><i class="fa-solid fa-video"></i> xx Seanca</span>
-				<span><i class="fa-solid fa-users"></i> Grup/Individual</span>
-			</div>
-			<div class="course-ratings">
-				<span>4.9 <i class="fa-solid fa-star"></i></span>
-				<span><b>Cmimi</b>Sipas Nivelit</span>
-			</div>
-		</div>
-
-		<div class="course-card">
-			<img src="images/courses/anglisht.jpg">
-			<div class="category">
-				<div class="subject"><h3>Anglisht</h3></div>
-				<img src="images/courses/teacher-1.jpg">
-			</div>
-			<h2 class="course-title">Anglisht Advanc C1-C2</h2>
-			<div class="course-desc">
-				<span><i class="fa-solid fa-video"></i> xx Seanca</span>
-				<span><i class="fa-solid fa-users"></i> Grup/Individual</span>
-			</div>
-			<div class="course-ratings">
-				<span>4.9 <i class="fa-solid fa-star"></i></span>
-				<span><b>Cmimi</b>Sipas Nivelit</span>
-			</div>
-		</div>
 
 	</div>
 	<!--   *** Courses Contents Ends ***   -->
 </section>
 <!--   *** Courses Section Ends ***   -->
+
+
+
+
 
 <!--   *** Courses Categories Section Starts ***   -->
 <section class="categories" >
@@ -260,45 +270,53 @@
 				<img src="https://upload.wikimedia.org/wikipedia/en/a/ae/Flag_of_the_United_Kingdom.svg" alt="Italian Flag" width="30" height="20" />
 			  </div>
 			  
-			<div class="category-desc">
+			<a href="anglisht.html" style="text-decoration: none;">
+				<div class="category-desc">
 				<h3>Kurse Anglisht</h3>
 				<p>Nivele A1 - C2 <br> Pergatitje per maturen shtetore <br>Per cdo Grupmoshe dhe nivel<br> Orare Fleksibel <br> Online & Fizikisht<br>Pergatitje per provimet nderkombetare 
 					TOEFL / IELTS / CAE / FCE<br>Pajisje me certefikate ne fund te cdo niveli</p>
 			</div>
+		</a>
 		</div>
 
 		<div class="category-item">
 			<div class="category-icon">
 				<img src="https://upload.wikimedia.org/wikipedia/commons/0/03/Flag_of_Italy.svg" alt="Italian Flag" width="30" height="20" />
 			  </div>
-			  
+			
+		<a href="italisht.html" style="text-decoration: none;">	  
 			<div class="category-desc">
 				<h3>Kurse Italisht</h3>
 				<p>Nivele A1 - B2 <br> Pergatitje per maturen shtetore <br>Per cdo Grupmoshe dhe nivel<br> Orare Fleksibel <br> Online & Fizikisht<br>Pergatitje per provimet nderkombetare 
 					CELI <br>Pajisje me certefikate ne fund te cdo niveli</p>
 			</div>
+		</a>
 		</div>
 
 		<div class="category-item">
 			<div class="category-icon">
 				<img src="https://upload.wikimedia.org/wikipedia/commons/b/ba/Flag_of_Germany.svg" alt="German Flag" width="30" height="20" />
 			  </div>
-			  
+
+		<a href="gjermanisht.html" style="text-decoration: none;">	  	  
 			<div class="category-desc">
 				<h3>Kurse Gjermanisht</h3>
 				<p>Nivele A1 - B2 <br> Pergatitje per maturen shtetore <br>Per cdo Grupmoshe dhe nivel<br> Orare Fleksibel <br> Online & Fizikisht<br>Pajisje me certefikate ne fund te cdo niveli</p>
 			</div>
+		</a>
 		</div>
 
 		<div class="category-item">
 			<div class="category-icon">
 				<i class="fa-solid fa-desktop"></i>
 			  </div>
-			  
+
+		<a href="kompjuter.html" style="text-decoration: none;">	  	  
 			<div class="category-desc">
 				<h3>Kurse Kompjuter</h3>
 				<p>Nivelet Baze  <br>Per cdo Grupmoshe<br> Orare Fleksibel <br> Online & Fizikisht<br>Pajisje me certefikate ne fund te cdo niveli</p>
 			</div>
+		</a>
 		</div>
 
 	</div>
@@ -493,36 +511,36 @@
 				<img src="images/home/logo.png">
 			</div>
 			<div class="col-contents">
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
+				<p>🎓 Dedikuar ofrimit te kurseve gjuhesore te standardit me te larte, ne ju ndihmojme te zhvilloni aftesite tuaja gjuhesore per sukses personal dhe profesional. </p>
+				<p>🕮 Me metoda inovative dhe mesues te kualifikuar, sigurojme nje eksperience mesimore te perkushtuar dhe efektive. Bashkohuni me ne per te ndertuar te ardhmen tuaj gjuhesore.</p>
 			</div>
 		</div>
 
 		<div class="footer-col footer-col-2">
 			<div class="col-title">
-				<h3>Contact</h3>
+				<h3>Kontakt</h3>
 			</div>
 			<div class="col-contents">
 				<div class="contact-row">
-					<span>Address</span>
-					<span>Tirane,Kombinat - Prane shkolles Betim Muco</span>
-					<span>Elbasan - Rruga Egnatia,Lagja pas kalase</span>
+					<span>Adresat</span>
+					<span>📌Tirane,Kombinat - Prane shkolles Betim Muco</span>
+					<span>📌Elbasan - Rruga Egnatia,Lagja pas kalase</span>
 
 				</div>
 				<div class="contact-row">
 					<span>Telefon</span>
-					<span>Tirane,Kombinat  +355 67 447 4166</span>
-					<span>Elbasan  +355 67 371 0166</span>
+					<span>📞 Tirane,Kombinat  +355 67 447 4166</span>
+					<span>📞 Elbasan  +355 67 371 0166</span>
 				</div>
 				<div class="contact-row">
 					<span>Instagram</span>
-					<span>@newwisdomelbasan</span>
-					<span>@newwisdomkombinat</span>
+					<span>🅾 @newwisdomelbasan</span>
+					<span>🅾 @newwisdomkombinat</span>
 
 				</div>
 				<div class="contact-row">
 					<span>Email</span>
-					<span>info@Five-Star-Tutorials.com</span>
+					<span>✉ newwisdomkombinat@gmail.com.com</span>
 				</div>
 			</div>
 		</div>
@@ -532,11 +550,11 @@
 				<h3>Zbuloni me shume!</h3>
 			</div>
 			<div class="col-contents">
-				<a href="#">Kreu</a>
-				<a href="#">Sherbimet</a>
-				<a href="#">Kurset</a>
-				<a href="#">Rreth Nesh</a>
-				<a href="#">Kliente</a>
+				<a href="index.html">Kreu</a>
+				<a href="index.html#courses">Kurset</a>
+				<a href="kontakt.html">Kontakt</a>
+				<a href="galeria.html">Rreth Nesh</a>
+				<a href="index.html#kliente">Kliente</a>
 			</div>
 		</div>
 

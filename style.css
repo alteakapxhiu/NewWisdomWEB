@@ -801,6 +801,70 @@ section.testimonials{
   }
   /* Deget Location Section Styles */
 
+/* Contact Styles  */
+.contact-form-section {
+	background-color: #f0f8ff;
+	padding: 40px 20px;
+	text-align: center;
+  }
+  
+  .contact-form-section h2 {
+	color: #0047ab;
+	font-size: 24px;
+	margin-bottom: 20px;
+  }
+  
+  .form-container {
+	max-width: 400px;
+	margin: 0 auto;
+	background: #ffffff;
+	padding: 20px;
+	border-radius: 8px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .form-group {
+	margin-bottom: 15px;
+	text-align: left;
+  }
+  
+  .form-group label {
+	font-weight: bold;
+	font-size: 14px;
+	color: #333333;
+	display: block;
+	margin-bottom: 5px;
+  }
+  
+  .form-group input,
+  .form-group textarea {
+	width: 100%;
+	padding: 10px;
+	border: 1px solid #cccccc;
+	border-radius: 5px;
+	font-size: 14px;
+  }
+  
+  .submit-btn {
+	display: block;
+	width: 100%;
+	padding: 10px;
+	background: #0047ab;
+	color: white;
+	font-size: 16px;
+	font-weight: bold;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	transition: background 0.3s;
+  }
+  
+  .submit-btn:hover {
+	background: #003580;
+  }
+  
+/* Contact Styles */  
+
 /* General Layout for Desktop */
 .locations-container {
   display: flex;
