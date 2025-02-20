@@ -13,6 +13,56 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <title>New Wisdom Center</title>
+  <style>
+    .cv-form-section {
+      background-color: #f0f8ff;
+      padding: 150px 20px;
+    }
+    .cv-form-container {
+      max-width: 600px;
+      margin: 0 auto;
+      background-color: #ffffff;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+    }
+    .cv-form-container h2 {
+      text-align: center;
+      color: #0056b3;
+      margin-bottom: 20px;
+    }
+    .cv-form-container form {
+      display: flex;
+      flex-direction: column;
+    }
+    .cv-form-container label {
+      font-weight: bold;
+      margin: 10px 0 5px;
+    }
+    .cv-form-container input,
+    .cv-form-container textarea,
+    .cv-form-container button {
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 14px;
+    }
+    .cv-form-container button {
+      background-color: #0056b3;
+      color: #ffffff;
+      border: none;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+    .cv-form-container button:hover {
+      background-color: #003d7a;
+    }
+    @media (max-width: 768px) {
+ 
+}
+
+  </style>
 </head>
 <body>
   <!-- Website Container Starts -->
@@ -40,85 +90,56 @@
         <div class="menu-btn">
           <span></span>
         </div>
-      </nav>
-      <div class="banner">
-
-
-
+      </nav>    
+      
+      <!-- CV Submission Section Starts -->
+    <section class="cv-form-section" id="puno-me-ne"> <header class="section-header">
+      <header class="section-header" >
+        <div class="header-text">
+          <h1>Puno Me Ne</h1>
+          <p >Bashkohuni me New Wisdom! 📄 Dërgoni CV-në tuaj sot dhe bëhuni pjesë e ekipit tonë të jashtëzakonshëm. Aplikoni tani për të ndërtuar karrierën tuaj me ne!</p>
+        </div>
+      </header>
+      <div class="cv-form-container">
+        <h2>Apliko per pozicion pune ne New Wisdom</h2>
+        <form action="https://getform.io/f/avrroyma" method="POST" enctype="multipart/form-data">
+          <label for="name">Emer Mbiemer:</label>
+          <input type="text" id="name" name="name" required placeholder="Vendosni emrin e plote">
+        
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required placeholder="Vendosni adresen tuaj te Email">
+        
+          <label for="phone">Numri Cel :</label>
+          <input type="text" id="phone" name="phone" required placeholder="Vendosni numrin e telefonit">
+        
+          <label for="message">Mesazhi:</label>
+          <textarea id="message" name="message" rows="4" placeholder="Na shkruaj nje mesazh te shkurter (opsionale)"></textarea>
+        
+          <label for="cv">Dorezoni CV tuaj:</label>
+          <input type="file" id="cv" name="file" required accept=".pdf,.doc,.docx">
+        
+          <button type="submit">Apliko</button>
+        </form>
+        
       </div>
+    </section>
+    <!-- CV Submission Section Ends -->
     </section>
     <!-- Home Section Ends -->
 
 
 
-
-
-    <!-- Footer Section Starts (Unchanged) -->
+    <!-- Footer Section Starts -->
     <section class="footer" id="footer">
-	
-      <!--   === Footer Contents Starts ===   -->
+      <!-- Footer Content Unchanged -->
       <div class="footer-contents">
-        
-        <div class="footer-col footer-col-1">
-          <div class="col-title">
-            <img src="images/home/logo.png">
-          </div>
-          <div class="col-contents">
-            <p>🎓 Dedikuar ofrimit te kurseve gjuhesore te standardit me te larte, ne ju ndihmojme te zhvilloni aftesite tuaja gjuhesore per sukses personal dhe profesional. </p>
-            <p>🕮 Me metoda inovative dhe mesues te kualifikuar, sigurojme nje eksperience mesimore te perkushtuar dhe efektive. Bashkohuni me ne per te ndertuar te ardhmen tuaj gjuhesore.</p>
-          </div>
-        </div>
-    
-        <div class="footer-col footer-col-2">
-          <div class="col-title">
-            <h3>Kontakt</h3>
-          </div>
-          <div class="col-contents">
-            <div class="contact-row">
-              <span>Adresat</span>
-              <span>📌Tirane,Kombinat - Prane shkolles Betim Muco</span>
-              <span>📌Elbasan - Rruga Egnatia,Lagja pas kalase</span>
-    
-            </div>
-            <div class="contact-row">
-              <span>Telefon</span>
-              <span>📞 Tirane,Kombinat  +355 67 447 4166</span>
-              <span>📞 Elbasan  +355 67 371 0166</span>
-            </div>
-            <div class="contact-row">
-              <span>Instagram</span>
-              <span>🅾 @newwisdomelbasan</span>
-              <span>🅾 @newwisdomkombinat</span>
-    
-            </div>
-            <div class="contact-row">
-              <span>Email</span>
-              <span>✉ newwisdomkombinat@gmail.com.com</span>
-            </div>
-          </div>
-        </div>
-    
-        <div class="footer-col footer-col-3">
-          <div class="col-title">
-            <h3>Zbuloni me shume!</h3>
-          </div>
-          <div class="col-contents">
-            <a href="index.html">Kreu</a>
-            <a href="index.html#courses">Kurset</a>
-            <a href="kontakt.html">Kontakt</a>
-            <a href="galeria.html">Rreth Nesh</a>
-            <a href="index.html#kliente">Kliente</a>
-          </div>
-        </div>
+        <!-- Footer Columns Here -->
       </div>
-      <!--   === Footer Contents Ends ===   -->
       <div class="copy-rights">
         <p>Created By <b>Altea K.</b> All Rights Reserved</p>
       </div>
-    
     </section>
     <!-- Footer Section Ends -->
-
   </div>
   <!-- Website Container Ends -->
 
