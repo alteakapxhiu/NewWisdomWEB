@@ -246,6 +246,7 @@ section.home{
 	position: absolute;
 	height: 100%;
 	width: 50px;
+	top:0px;
 	background-color: var(--primary-clr);
 	right: 0;
 	color: var(--light-heading-clr);

@@ -78,5 +78,22 @@ $('.testimonials-slider').owlCarousel({
 })
 // Testimonials Section Ends
 
+// Search Functionality
+function search() {
+    const input = document
+        .getElementById("search-bar")
+        .value.toLowerCase();
+    localStorage.setItem("searchQuery", input);
 
-
+    if (input.includes("anglisht")) {
+        window.location.href = "anglisht.html";
+    } else if (input.includes("italisht")) {
+        window.location.href = "italisht.html";
+    } else if (input.includes("gjermanisht")) {
+        window.location.href = "gjermanisht.html";
+    } else if (input.includes("kompjuter")) {
+        window.location.href = "kompjuter.html";
+    } else {
+        alert("Kursi nuk u gjet!");
+    }
+}

@@ -68,11 +68,18 @@
               përshtaten me ritmin tuaj. Bashkohuni me ne për të zgjeruar
               horizontet tuaja!
             </p>
-            <form class="search-bar">
-              <input type="search" placeholder="Kerko Kursin" />
-              <i class="fa-solid fa-search"></i>
+            <form
+              class="search-bar"
+              onsubmit="event.preventDefault(); search();"
+            >
+              <input type="search" id="search-bar" placeholder="Kerko Kursin" />
+              <button type="submit">
+                <i class="fa-solid fa-search"></i>
+              </button>
             </form>
           </div>
+          <script></script>
+
           <style>
             /* Mobile Responsiveness */
             @media (max-width: 768px) {
