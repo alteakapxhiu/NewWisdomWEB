@@ -53,12 +53,19 @@
 			Mesoni <b style="color:blue">Italisht</b> dhe hapni dyert e mundesive te reja! Permirsoni aftesite komunikuese, rrisni perspektivat e karrieres dhe fitoni mundesi te reja. <br/><br/><i><b style="color:blue">Regjistrohuni sot dhe nisni udhetimin tuaj drejt suksesit!</b></i>		  </p>
 		  </p>
 		  <div style="margin-top: 10px;">
-			<button class="teacher-btn btn">
-			  <i class="fab fa-instagram"></i> Instagram
-			</button>
-			<button class="teacher-btn btn">
-			  <i class="fab fa-whatsapp"></i> Whatsapp
-			</button>
+			<button
+            class="teacher-btn btn"
+            onclick="window.open('https://www.instagram.com/newwisdomelbasan/', '_blank')"
+          >
+            <i class="fab fa-instagram"></i> Na Kontakto
+          </button>
+
+          <button
+            class="teacher-btn btn"
+            onclick="window.open('https://api.whatsapp.com/send/?phone=355674474166&text=fff&type=phone_number&app_absent=0', '_blank')"
+          >
+            <i class="fab fa-whatsapp"></i> Na Kontakto
+          </button>
 		  </div>
 		</div>
 	  </div>
@@ -110,7 +117,7 @@
 	  const viewAllButton = document.querySelector(".courses-btn");
 	  
 	  // Show the first three courses by default
-	  for (let i = 0; i < 3; i++) {
+	  for (let i = 0; i < 6; i++) {
 		if (courses[i]) courses[i].classList.add("visible");
 	  }
 	  
@@ -125,7 +132,7 @@
 		  viewAllButton.textContent = "Shiko me pak"; // Update button text
 		} else {
 		  courses.forEach((course, index) => {
-			if (index >= 3) course.classList.remove("visible");
+			if (index >= 6) course.classList.remove("visible");
 		  });
 		  viewAllButton.textContent = "Shiko Te Tera"; // Revert button text
 		}
