@@ -279,6 +279,9 @@ section.home{
 	top: 0;
 	left: 0;
 }
+.total-courses{
+margin-left: -25px;
+}
 .banner-img-container .states .total-courses{
 	position: absolute;
 	padding: 6px 10px 6px 6px;
@@ -945,6 +948,13 @@ section.testimonials{
     width: 100%; /* Make the button full width */
     text-align: center; /* Center the text in the button */
   }
+  .total-courses{
+	margin-bottom: -30%;
+	margin-left: 0px;
+  }
+  .spacer {
+    height: 30px; /* Adds 20px of space on mobile */
+  }
 }
 
 @media (max-width: 480px) {
@@ -955,6 +965,7 @@ section.testimonials{
   .view-map-btn {
     padding: 12px 20px; /* Larger padding for better touch accessibility */
   }
+  
 }
 
   
