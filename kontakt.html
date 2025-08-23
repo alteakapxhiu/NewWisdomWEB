@@ -3,7 +3,13 @@
 <head>
   <!-- Link To Custom CSS Style Sheet -->
   <link rel="stylesheet" type="text/css" href="style.css">
-
+<script src="script.js"></script>
+<link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
+      crossorigin="anonymous"
+    />
   <!-- Link To Font Awesome Icons -->
    
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"/>
@@ -405,6 +411,8 @@
         <div class="formbg-outer">
           <div class="formbg">
             <div class="formbg-inner padding-horizontal--48">
+              <span class="padding-bottom--15">Na Kontaktoni</span>
+
               <div class="contact-icons">
                 <a href="https://www.instagram.com/newwisdomelbasan/" class="contact-icon" target="_blank" aria-label="Instagram">
                   <i class="fab fa-instagram"></i>
@@ -420,38 +428,101 @@
                 </a>
               </div>
               
-              <span class="padding-bottom--15">Na Kontaktoni</span>
-              <form id="whatsapp-message-form" class="stripe-login-form">
-                <div class="field padding-bottom--24">
-                  <label for="message">Mesazhi</label>
-                  <textarea name="message" id="message" placeholder="Na dergo nje mesazh.." required></textarea>
-                </div>
-              
-                <div class="field padding-bottom--24">
-                  <input type="submit" name="submit" value="Dergo">
-                </div>
-              
-                <div class="field">
-                  <a class="ssolink" href="https://www.instagram.com/newwisdomelbasan/" target="_blank">
+             <form id="cvForm" >
+  <div class="field padding-bottom--24">
+    <label for="fullName">Full Name</label>
+    <input type="text" id="fullName" placeholder="Your Full Name" required>
+  </div>
+
+  <div class="field padding-bottom--24">
+    <label for="email">Email Address</label>
+    <input type="email" id="email" placeholder="Your Email" required>
+  </div>
+
+  <div class="field padding-bottom--24">
+    <label for="phone">Phone Number</label>
+    <input type="tel" id="phone" placeholder="Your Phone Number" required>
+  </div>
+  <div class="field padding-bottom--24">
+        <label for="phone">CV</label>
+
+<div class="input-group mb-3">
+  <input type="file" class="form-control" id="inputGroupFile02">
+</div>  
+
+</div>
+<input type="submit" value="Submit CV">
+
+               <a class="ssolink" href="https://www.instagram.com/newwisdomelbasan/" target="_blank">
                     Ose na shkruani ne Instagram DM
-                  </a>
-               </div>
-              </form>
-              
-              <script>
-                document.getElementById('whatsapp-message-form').addEventListener('submit', function(e) {
-                  e.preventDefault();
-              
-                  const message = document.getElementById('message').value;
-                  
-                  if (message) {
-                    const whatsappLink = `https://wa.me/355674474166?text=${encodeURIComponent(message)}`;
-                    window.open(whatsappLink, '_blank');
-                  } else {
-                    alert('Ju lutem shkruani nje mesazh...');
-                  }
-                });
-              </script>
+                  </a></form>
+
+<script type="module">
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/12.1.0/firebase-app.js";
+  import { getAnalytics } from "https://www.gstatic.com/firebasejs/12.1.0/firebase-analytics.js";
+  import { getFirestore, collection, addDoc } from "https://www.gstatic.com/firebasejs/12.1.0/firebase-firestore.js";
+
+  // Firebase config
+  const firebaseConfig = {
+    apiKey: "AIzaSyDYmsfeROCFjHCCSoJwFESPGgiRgCVJpV8",
+    authDomain: "newwisdomweb.firebaseapp.com",
+    projectId: "newwisdomweb",
+    storageBucket: "newwisdomweb.appspot.com",
+    messagingSenderId: "875979569860",
+    appId: "1:875979569860:web:1b5c645a6acd1011572791",
+    measurementId: "G-FR48TLHG1L"
+  };
+
+  const app = initializeApp(firebaseConfig);
+  const analytics = getAnalytics(app);
+  const db = getFirestore(app);
+
+  document.getElementById("cvForm").addEventListener("submit", async (e) => {
+    e.preventDefault();
+
+    const fullName = document.getElementById("fullName").value;
+    const email = document.getElementById("email").value;
+    const phone = document.getElementById("phone").value;
+    const cvFile = document.getElementById("inputGroupFile02").files[0];
+
+    if (!cvFile) {
+      alert("Please select a CV file to upload!");
+      return;
+    }
+
+    try {
+      // 1. Send file to Node server for Cloudinary upload
+      const formData = new FormData();
+      formData.append("file", cvFile);
+
+      const serverResponse = await fetch("http://localhost:5000/upload", {
+        method: "POST",
+        body: formData
+      });
+
+      if (!serverResponse.ok) throw new Error("Upload failed");
+      const data = await serverResponse.json();
+      const cvURL = data.url; // Cloudinary link
+
+      // 2. Save metadata + Cloudinary link to Firestore
+      await addDoc(collection(db, "submissions"), {
+        fullName,
+        email,
+        phone,
+        cvURL,
+        timestamp: new Date()
+      });
+
+      alert("✅ Your CV was successfully submitted!");
+      e.target.reset();
+    } catch (err) {
+      console.error("❌ Error submitting CV:", err);
+      alert("Something went wrong. Please try again.");
+    }
+  });
+</script>
+
+
               
               <style>
                 .stripe-login-form {
