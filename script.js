@@ -1,72 +1,101 @@
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
 
-// ================= Home Section =================
-const menuBtn = document.querySelector('.main-navbar .menu-btn');
-const menuList = document.querySelector('.main-navbar .nav-list');
-const menuListItems = document.querySelectorAll('.nav-list li a');
+var menuBtn = document.querySelector('.main-navbar .menu-btn');
+var menuList = document.querySelector('.main-navbar .nav-list');
+var menuListItems = document.querySelectorAll('.nav-list li a');
 
-menuBtn.addEventListener('click', () => {
+menuBtn.addEventListener('click', function () {
     menuBtn.classList.toggle('active');
     menuList.classList.toggle('active');
 });
 
-menuListItems.forEach(item => {
-    item.addEventListener('click', () => {
-        menuBtn.classList.remove('active');
-        menuList.classList.remove('active');
-    });
-});
+for (var i = 0; i < menuListItems.length; i++) {
+    menuListItems[i].addEventListener('click', menuItemClicked);
+}
+function menuItemClicked() {
+    menuBtn.classList.remove('active');
+    menuList.classList.remove('active');
+}
 
-const homeSection = document.querySelector('.home');
-window.addEventListener('scroll', toggleHomeActive);
-window.addEventListener('load', toggleHomeActive);
+var homeSection = document.querySelector('.home');
+window.addEventListener('scroll', pageScrollFunction);
+window.addEventListener('load', pageScrollFunction);
 
-function toggleHomeActive() {
+function pageScrollFunction() {
     if (window.scrollY > 120) {
         homeSection.classList.add('active');
-    } else {
+    }
+    else {
         homeSection.classList.remove('active');
     }
 }
-// ================= End Home Section =================
+// Home Section Ends
 
-// ================= Partners Section =================
+// Partners Section Starts 
 $('.partners-slider').owlCarousel({
     loop: true,
     autoplay: true,
     autoplayTimeout: 3000,
     margin: 10,
     nav: true,
-    navText: ["<i class='fa-solid fa-arrow-left'></i>", "<i class='fa-solid fa-arrow-right'></i>"],
-    responsive: { 0: { items: 1 }, 500: { items: 2 }, 700: { items: 3 }, 1000: { items: 5 } }
-});
-// ================= End Partners Section =================
+    navText: ["<i class='fa-solid fa-arrow-left'></i>",
+        "<i class='fa-solid fa-arrow-right'></i>"],
+    responsive: {
+        0: {
+            items: 1
+        },
+        500: {
+            items: 2
+        },
+        700: {
+            items: 3
+        },
+        1000: {
+            items: 5
+        }
+    }
+})
+// Partners Section Ends 
 
-// ================= Testimonials Section =================
+// Testimonials Section Starts
 $('.testimonials-slider').owlCarousel({
     loop: true,
     autoplay: true,
     autoplayTimeout: 6000,
     margin: 10,
     nav: true,
-    navText: ["<i class='fa-solid fa-arrow-left'></i>", "<i class='fa-solid fa-arrow-right'></i>"],
-    responsive: { 0: { items: 1 }, 768: { items: 2 } }
-});
-// ================= End Testimonials Section =================
+    navText: ["<i class='fa-solid fa-arrow-left'></i>",
+        "<i class='fa-solid fa-arrow-right'></i>"],
+    responsive: {
+        0: {
+            items: 1
+        },
+        768: {
+            items: 2
+        }
+    }
+})
+// Testimonials Section Ends
 
-// ================= Search Functionality =================
+// Search Functionality
 function search() {
-    const input = document.getElementById("search-bar").value.toLowerCase();
+    const input = document
+        .getElementById("search-bar")
+        .value.toLowerCase();
     localStorage.setItem("searchQuery", input);
 
-    if (input.includes("anglisht")) window.location.href = "anglisht.html";
-    else if (input.includes("italisht")) window.location.href = "italisht.html";
-    else if (input.includes("gjermanisht")) window.location.href = "gjermanisht.html";
-    else if (input.includes("kompjuter")) window.location.href = "kompjuter.html";
-    else alert("Kursi nuk u gjet!");
-}
-// ================= End Search =================
 
+    if (input.includes("anglisht")) {
+        window.location.href = "anglisht.html";
+    } else if (input.includes("italisht")) {
+        window.location.href = "italisht.html";
+    } else if (input.includes("gjermanisht")) {
+        window.location.href = "gjermanisht.html";
+    } else if (input.includes("kompjuter")) {
+        window.location.href = "kompjuter.html";
+    } else {
+        alert("Kursi nuk u gjet!");
+    }
+}
 // ================= Initialize Firebase =================
 const firebaseConfig = {
     apiKey: "AIzaSyDYmsfeROCFjHCCSoJwFESPGgiRgCVJpV8",

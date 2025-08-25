@@ -3,8 +3,15 @@
 <head>
   <!-- Link To Custom CSS Style Sheet -->
   <link rel="stylesheet" type="text/css" href="style.css">
-
+<script src="script.js"></script>
+<link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
+      crossorigin="anonymous"
+    />
   <!-- Link To Font Awesome Icons -->
+   
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"/>
 
   <!-- Link To Owl Carousel -->
@@ -13,65 +20,16 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <title>New Wisdom Center</title>
-  <style>
-    .cv-form-section {
-      background-color: #f0f8ff;
-      padding: 150px 20px;
-    }
-    .cv-form-container {
-      max-width: 600px;
-      margin: 0 auto;
-      background-color: #ffffff;
-      border-radius: 8px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-      padding: 20px;
-    }
-    .cv-form-container h2 {
-      text-align: center;
-      color: #0056b3;
-      margin-bottom: 20px;
-    }
-    .cv-form-container form {
-      display: flex;
-      flex-direction: column;
-    }
-    .cv-form-container label {
-      font-weight: bold;
-      margin: 10px 0 5px;
-    }
-    .cv-form-container input,
-    .cv-form-container textarea,
-    .cv-form-container button {
-      padding: 10px;
-      margin-bottom: 15px;
-      border: 1px solid #ccc;
-      border-radius: 5px;
-      font-size: 14px;
-    }
-    .cv-form-container button {
-      background-color: #0056b3;
-      color: #ffffff;
-      border: none;
-      cursor: pointer;
-      transition: background-color 0.3s;
-    }
-    .cv-form-container button:hover {
-      background-color: #003d7a;
-    }
-    @media (max-width: 768px) {
- 
-}
 
-  </style>
 </head>
 <body>
   <!-- Website Container Starts -->
   <div class="website-container">
-    
+
     <!-- Home Section Starts -->
     <section class="home" id="home">
       <nav class="main-navbar">
-        <a href="#" class="logo">
+        <a href="index.html" class="logo">
           <img src="images/home/logo.png" width="100px">
         </a>
         <ul class="nav-list">
@@ -90,66 +48,652 @@
         <div class="menu-btn">
           <span></span>
         </div>
-      </nav>    
+      </nav>
       
-      <!-- CV Submission Section Starts -->
-    <section class="cv-form-section" id="puno-me-ne"> <header class="section-header">
-      <header class="section-header" >
-        <div class="header-text">
-          <h1>Puno Me Ne</h1>
-          <p >Bashkohuni me New Wisdom! 📄 Dërgoni CV-në tuaj sot dhe bëhuni pjesë e ekipit tonë të jashtëzakonshëm. Aplikoni tani për të ndërtuar karrierën tuaj me ne!</p>
+      <style>
+  
+        * {
+        padding: 0;
+        margin: 0;
+        color: #1a1f36;
+        box-sizing: border-box;
+        word-wrap: break-word;
+        font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Ubuntu,sans-serif;
+      }
+      
+      h1 {
+          letter-spacing: -1px;
+      }
+      a {
+        color: #5469d4;
+        text-decoration: unset;
+      }
+      .login-root {
+          background: #fff;
+          display: flex;
+          width: 100%;
+          min-height: 100vh;
+          overflow: hidden;
+      }
+      .loginbackground {
+          min-height: 500px;
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          top: 0;
+          z-index: 0;
+          overflow: hidden;
+      }
+      .flex-flex {
+          display: flex;
+      }
+      .align-center {
+        align-items: center; 
+      }
+      .center-center {
+        align-items: center;
+        justify-content: center;
+      }
+      .box-root {
+          box-sizing: border-box;
+      }
+      .flex-direction--column {
+          -ms-flex-direction: column;
+          flex-direction: column;
+      }
+      .loginbackground-gridContainer {
+          display: -ms-grid;
+          display: grid;
+          -ms-grid-columns: [start] 1fr [left-gutter] (86.6px)[16] [left-gutter] 1fr [end];
+          grid-template-columns: [start] 1fr [left-gutter] repeat(16,86.6px) [left-gutter] 1fr [end];
+          -ms-grid-rows: [top] 1fr [top-gutter] (64px)[8] [bottom-gutter] 1fr [bottom];
+          grid-template-rows: [top] 1fr [top-gutter] repeat(8,64px) [bottom-gutter] 1fr [bottom];
+          justify-content: center;
+          margin: 0 -2%;
+          transform: rotate(-12deg) skew(-12deg);
+      }
+      .box-divider--light-all-2 {
+          box-shadow: inset 0 0 0 2px #e3e8ee;
+      }
+      .box-background--blue {
+          background-color: #5469d4;
+      }
+      .box-background--white {
+        background-color: #ffffff; 
+      }
+      .box-background--blue800 {
+          background-color: #212d63;
+      }
+      .box-background--gray100 {
+          background-color: #e3e8ee;
+      }
+      .box-background--cyan200 {
+          background-color: #7fd3ed;
+      }
+      .padding-top--64 {
+        padding-top: 64px;
+      }
+      .padding-top--24 {
+        padding-top: 24px;
+      }
+      .padding-top--48 {
+        padding-top: 48px;
+      }
+      .padding-bottom--24 {
+        padding-bottom: 24px;
+      }
+      .padding-horizontal--48 {
+        padding: 48px;
+      }
+      .padding-bottom--15 {
+        padding-bottom: 15px;
+      }
+      
+      .flex-justifyContent--center {
+        -ms-flex-pack: center;
+        justify-content: center;
+      }
+      
+      .formbg {
+          margin: 0px auto;
+          width: 100%;
+          max-width: 448px;
+          background: white;
+          border-radius: 4px;
+          box-shadow: rgba(60, 66, 87, 0.12) 0px 7px 14px 0px, rgba(0, 0, 0, 0.12) 0px 3px 6px 0px;
+      }
+      span {
+          display: block;
+          font-size: 20px;
+          line-height: 28px;
+          color: #1a1f36;
+      }
+      label {
+          margin-bottom: 10px;
+      }
+      .reset-pass a,label {
+          font-size: 14px;
+          font-weight: 600;
+          display: block;
+      }
+      .reset-pass > a {
+          text-align: right;
+          margin-bottom: 10px;
+      }
+      .grid--50-50 {
+          display: grid;
+          grid-template-columns: 50% 50%;
+          align-items: center;
+      }
+      
+      .field input {
+          font-size: 16px;
+          line-height: 28px;
+          padding: 8px 16px;
+          width: 100%;
+          min-height: 44px;
+          border: unset;
+          border-radius: 4px;
+          outline-color: rgb(84 105 212 / 0.5);
+          background-color: rgb(255, 255, 255);
+          box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px, 
+                      rgba(0, 0, 0, 0) 0px 0px 0px 0px, 
+                      rgba(0, 0, 0, 0) 0px 0px 0px 0px, 
+                      rgba(60, 66, 87, 0.16) 0px 0px 0px 1px, 
+                      rgba(0, 0, 0, 0) 0px 0px 0px 0px, 
+                      rgba(0, 0, 0, 0) 0px 0px 0px 0px, 
+                      rgba(0, 0, 0, 0) 0px 0px 0px 0px;
+      }
+      
+      input[type="submit"] {
+          background-color: rgb(84, 105, 212);
+          box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px, 
+                      rgba(0, 0, 0, 0) 0px 0px 0px 0px, 
+                      rgba(0, 0, 0, 0.12) 0px 1px 1px 0px, 
+                      rgb(84, 105, 212) 0px 0px 0px 1px, 
+                      rgba(0, 0, 0, 0) 0px 0px 0px 0px, 
+                      rgba(0, 0, 0, 0) 0px 0px 0px 0px, 
+                      rgba(60, 66, 87, 0.08) 0px 2px 5px 0px;
+          color: #fff;
+          font-weight: 600;
+          cursor: pointer;
+      }
+      .field-checkbox input {
+          width: 20px;
+          height: 15px;
+          margin-right: 5px; 
+          box-shadow: unset;
+          min-height: unset;
+      }
+      .field-checkbox label {
+          display: flex;
+          align-items: center;
+          margin: 0;
+      }
+      a.ssolink {
+          display: block;
+          text-align: center;
+          font-weight: 600;
+      }
+     
+      .listing a {
+          color: #697386;
+          font-weight: 600;
+          margin: 0 10px;
+      }
+      
+      .animationRightLeft {
+        animation: animationRightLeft 2s ease-in-out infinite;
+      }
+      .animationLeftRight {
+        animation: animationLeftRight 2s ease-in-out infinite;
+      }
+      .tans3s {
+        animation: animationLeftRight 3s ease-in-out infinite;
+      }
+      .tans4s {
+        animation: animationLeftRight 4s ease-in-out infinite;
+      }
+      
+      @keyframes animationLeftRight {
+        0% {
+          transform: translateX(0px);
+        }
+        50% {
+          transform: translateX(1000px);
+        }
+        100% {
+          transform: translateX(0px);
+        }
+      } 
+      
+      @keyframes animationRightLeft {
+        0% {
+          transform: translateX(0px);
+        }
+        50% {
+          transform: translateX(-1000px);
+        }
+        100% {
+          transform: translateX(0px);
+        }
+      } 
+       /* Responsive Design */
+       @media (max-width: 768px) {
+        .login-root {
+          width: 100%;
+          padding: 20px;
+        }
+        .loginbackground {
+          min-height: 802px;
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          top: 0;
+          z-index: 0;
+          overflow: hidden;
+        }
+        h1 {
+          font-size: 24px;
+        }
+        input[type="email"],
+        input[type="password"],
+        input[type="submit"] {
+          font-size: 18px;
+          padding: 14px;
+        }
+        .formbg {
+          max-width: 100%; /* Allow the form to take up more width on mobile */
+          padding: 20px;  /* Add some padding for better spacing */
+        }
+        .formbg-inner span {
+          font-size: 16px;
+        }
+       
+      }
+      /* General Styles for the Social Icons */
+.contact-icons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; 
+  gap: 20px;
+  padding: 20px;
+  background-color: #fff; }
+
+/* Icon Styling */
+.contact-icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #fff; /* White background for each icon */
+  border: 2px solid #007BFF; /* Blue border */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #007BFF; /* Blue icon color */
+  font-size: 25px; /* Icon size */
+  text-decoration: none;
+  transition: transform 0.3s, background-color 0.3s, color 0.3s;
+}
+
+.contact-icon:hover {
+  background-color: #007BFF; /* Blue background on hover */
+  color: #fff; /* White icon color on hover */
+  transform: scale(1.1);
+}
+
+/* Responsive Styling */
+@media screen and (max-width: 768px) {
+  .contact-icon {
+    width: 40px;
+    height: 40px;
+    font-size: 25px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .contact-icon {
+    width: 28px;
+    height: 28px;
+    font-size: 15px;
+  }
+}
+
+
+      </style>
+
+<body>
+
+  <div class="login-root">
+    
+    <div class="box-root flex-flex flex-direction--column" style="min-height: 100vh;flex-grow: 1;">
+      <div class="loginbackground box-background--white padding-top--64">
+        
+        <div class="loginbackground-gridContainer">
+          
+          <div class="box-root flex-flex" style="grid-area: top / start / 8 / end;">
+            <div class="box-root" style="background-image: linear-gradient(white 0%, rgb(247, 250, 252) 33%); flex-grow: 1;">
+            </div>
+          </div>
+          <div class="box-root flex-flex" style="grid-area: 4 / 2 / auto / 5;">
+            <div class="box-root box-divider--light-all-2 animationLeftRight tans3s" style="flex-grow: 1;"></div>
+          </div>
+          <div class="box-root flex-flex" style="grid-area: 6 / start / auto / 2;">
+            <div class="box-root box-background--blue800" style="flex-grow: 1;"></div>
+          </div>
+          <div class="box-root flex-flex" style="grid-area: 7 / start / auto / 4;">
+            <div class="box-root box-background--blue animationLeftRight" style="flex-grow: 1;"></div>
+          </div>
+          <div class="box-root flex-flex" style="grid-area: 8 / 4 / auto / 6;">
+            <div class="box-root box-background--gray100 animationLeftRight tans3s" style="flex-grow: 1;"></div>
+          </div>
+          <div class="box-root flex-flex" style="grid-area: 2 / 15 / auto / end;">
+            <div class="box-root box-background--cyan200 animationRightLeft tans4s" style="flex-grow: 1;"></div>
+          </div>
+          <div class="box-root flex-flex" style="grid-area: 3 / 14 / auto / end;">
+            <div class="box-root box-background--blue animationRightLeft" style="flex-grow: 1;"></div>
+          </div>
+          <div class="box-root flex-flex" style="grid-area: 4 / 17 / auto / 20;">
+            <div class="box-root box-background--gray100 animationRightLeft tans4s" style="flex-grow: 1;"></div>
+          </div>
+          <div class="box-root flex-flex" style="grid-area: 5 / 14 / auto / 17;">
+            <div class="box-root box-divider--light-all-2 animationRightLeft tans3s" style="flex-grow: 1;"></div>
+          </div>
         </div>
-      </header>
-      <div class="cv-form-container">
-        <h2>Apliko per pozicion pune ne New Wisdom</h2>
-        <form action="https://getform.io/f/avrroyma" method="POST" enctype="multipart/form-data">
-          <label for="name">Emer Mbiemer:</label>
-          <input type="text" id="name" name="name" required placeholder="Vendosni emrin e plote">
-        
-          <label for="email">Email:</label>
-          <input type="email" id="email" name="email" required placeholder="Vendosni adresen tuaj te Email">
-        
-          <label for="phone">Numri Cel :</label>
-          <input type="text" id="phone" name="phone" required placeholder="Vendosni numrin e telefonit">
-        
-          <label for="message">Mesazhi:</label>
-          <textarea id="message" name="message" rows="4" placeholder="Na shkruaj nje mesazh te shkurter (opsionale)"></textarea>
-        
-          <label for="cv">Dorezoni CV tuaj:</label>
-          <input type="file" id="cv" name="file" required accept=".pdf,.doc,.docx">
-        
-          <button type="submit">Apliko</button>
-        </form>
-        
       </div>
-    </section>
-    <!-- CV Submission Section Ends -->
-    </section>
-    <!-- Home Section Ends -->
-
-
-
-    <!-- Footer Section Starts -->
-    <section class="footer" id="footer">
-      <!-- Footer Content Unchanged -->
-      <div class="footer-contents">
-        <!-- Footer Columns Here -->
-      </div>
-      <div class="copy-rights">
-        <p>Created By <b>Altea K.</b> All Rights Reserved</p>
-      </div>
-    </section>
-    <!-- Footer Section Ends -->
+      <div class="box-root padding-top--24 flex-flex flex-direction--column" style="flex-grow: 1; z-index: 9;">
+        <div class="box-root padding-top--48 padding-bottom--24 flex-flex flex-justifyContent--center">
+          <h1><a href="http://blog.stackfindover.com/" rel="dofollow"></a></h1>
+        </div>
+        <div class="formbg-outer">
+          <div class="formbg">
+            <div class="formbg-inner padding-horizontal--48">
+               <div class="contact-icons">
+                <a href="https://www.instagram.com/newwisdomelbasan/" class="contact-icon" target="_blank" aria-label="Instagram">
+                  <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://api.whatsapp.com/send/?phone=355674474166&text=fff&type=phone_number&app_absent=0" class="contact-icon" target="_blank" aria-label="WhatsApp">
+                  <i class="fab fa-whatsapp"></i>
+                </a>
+                <a href="tel:+123456789" class="contact-icon" aria-label="Phone">
+                  <i class="fas fa-phone"></i>
+                </a>
+                <a href="https://goo.gl/maps/yourgooglemaplink" class="contact-icon" target="_blank" aria-label="Google Maps">
+                  <i class="fas fa-map-marker-alt"></i>
+                </a>
+              </div>
+   <div class="header-text">
+          <h3>Puno Me Ne</h3>
+          <p >Apliko per pozicion pune ne New Wisdom📄 Dërgoni CV-në tuaj me poshte. </p>
+        </div>
+             
+              
+             <form id="cvForm" >
+  <div class="field padding-bottom--24">
+    <label for="fullName">Full Name</label>
+    <input type="text" id="fullName" placeholder="Your Full Name" required>
   </div>
-  <!-- Website Container Ends -->
 
-  <!-- Link To JQuery -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+  <div class="field padding-bottom--24">
+    <label for="email">Email Address</label>
+    <input type="email" id="email" placeholder="Your Email" required>
+  </div>
 
-  <!-- Link To Owl Carousel -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  <div class="field padding-bottom--24">
+    <label for="phone">Phone Number</label>
+    <input type="tel" id="phone" placeholder="Your Phone Number" required>
+  </div>
+  <div class="field padding-bottom--24">
+        <label for="phone">CV</label>
 
-  <!-- Link To Custom Script File -->
-  <script type="text/javascript" src="script.js"></script>
+<div class="input-group mb-3">
+  <input type="file" class="form-control" id="inputGroupFile02">
+</div>  
+
+</div>
+<input type="submit" value="Submit CV">
+</form>
+
+               <a class="ssolink" href="https://www.instagram.com/newwisdomelbasan/" target="_blank">
+                    Ose na shkruani ne Instagram DM
+                  </a>
+<script type="module">
+import { initializeApp } from "https://www.gstatic.com/firebasejs/12.1.0/firebase-app.js";
+import { getFirestore, collection, addDoc } from "https://www.gstatic.com/firebasejs/12.1.0/firebase-firestore.js";
+
+// Firebase config
+const firebaseConfig = {
+  apiKey: "AIzaSyDYmsfeROCFjHCCSoJwFESPGgiRgCVJpV8",
+  authDomain: "newwisdomweb.firebaseapp.com",
+  projectId: "newwisdomweb",
+  storageBucket: "newwisdomweb.appspot.com",
+  messagingSenderId: "875979569860",
+  appId: "1:875979569860:web:1b5c645a6acd1011572791",
+  measurementId: "G-FR48TLHG1L"
+};
+
+const app = initializeApp(firebaseConfig);
+const db = getFirestore(app);
+
+document.getElementById("cvForm").addEventListener("submit", async (e) => {
+  e.preventDefault();
+
+  const fullName = document.getElementById("fullName").value;
+  const email = document.getElementById("email").value;
+  const phone = document.getElementById("phone").value;
+  const cvFile = document.getElementById("inputGroupFile02").files[0];
+
+  if (!cvFile) {
+    alert("Please select a CV file to upload!");
+    return;
+  }
+
+  try {
+    // 1️⃣ Upload CV to your Express + Cloudinary backend
+    const formData = new FormData();
+    formData.append("file", cvFile);
+
+    const res = await fetch("http://localhost:5000/upload", {
+      method: "POST",
+      body: formData,
+    });
+
+    const data = await res.json();
+    if (!res.ok) throw new Error(data.error || "Upload failed");
+
+    const cvURL = data.url; // Cloudinary link
+
+    // 2️⃣ Save metadata + Cloudinary URL to Firebase
+    await addDoc(collection(db, "submissions"), {
+      fullName,
+      email,
+      phone,
+      cvURL,
+      timestamp: new Date()
+    });
+
+    alert("✅ Your CV was successfully submitted!");
+    e.target.reset();
+  } catch (err) {
+    console.error("Error submitting CV:", err);
+    alert("❌ Something went wrong. Please try again.");
+  }
+});
+</script>
+
+
+              
+              <style>
+                .stripe-login-form {
+                  font-family: Arial, sans-serif;
+                  width: 100%;
+                  max-width: 400px;
+                  margin: 0 auto;
+                  background-color: #fff;
+                  padding: 20px;
+                  border-radius: 8px;
+                  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+                }
+              
+                .field {
+                  margin-bottom: 24px;
+                }
+              
+                label {
+                  display: block;
+                  font-size: 14px;
+                  color: #333;
+                  margin-bottom: 8px;
+                }
+              
+                textarea {
+                  width: 100%;
+                  padding: 12px;
+                  font-size: 14px;
+                  border: 1px solid #ccc;
+                  border-radius: 4px;
+                  resize: vertical;
+                  box-sizing: border-box;
+                }
+              
+                input[type="submit"] {
+                  width: 100%;
+                  padding: 12px;
+                  font-size: 16px;
+                  background-color: #2531d3;
+                  color: white;
+                  border: none;
+                  border-radius: 4px;
+                  cursor: pointer;
+                }
+              
+                input[type="submit"]:hover {
+                  background-color: #2531d3;
+                }
+              
+                .ssolink {
+                  text-align: center;
+                  display: block;
+                  margin-top: 10px;
+                  font-size: 12px;
+                  color: #2531d3;
+                  text-decoration: none;
+                }
+              
+                .ssolink:hover {
+                  text-decoration: underline;
+                }
+                
+              </style>
+              
+            </div>
+          </div>
+         
+        </div>
+      </div>
+    </div>
+  </div>
+ </body>
+</section>
+</div>
+
+  <!-- Footer Section Starts -->
+  <section class="footer" id="footer">
+	
+    <!--   === Footer Contents Starts ===   -->
+    <div class="footer-contents">
+      
+      <div class="footer-col footer-col-1">
+        <div class="col-title">
+          <img src="images/home/logo.png">
+        </div>
+        <div class="col-contents">
+          <p>🎓 Dedikuar ofrimit te kurseve gjuhesore te standardit me te larte, ne ju ndihmojme te zhvilloni aftesite tuaja gjuhesore per sukses personal dhe profesional. </p>
+          <p>🕮 Me metoda inovative dhe mesues te kualifikuar, sigurojme nje eksperience mesimore te perkushtuar dhe efektive. Bashkohuni me ne per te ndertuar te ardhmen tuaj gjuhesore.</p>
+        </div>
+      </div>
+  
+      <div class="footer-col footer-col-2">
+        <div class="col-title">
+          <h3>Contact</h3>
+        </div>
+        <div class="col-contents">
+          <div class="contact-row">
+            <span>Adresat</span>
+            <span>📌Tirane,Kombinat - Prane shkolles Betim Muco</span>
+            <span>📌Elbasan - Rruga Egnatia,Lagja pas kalase</span>
+  
+          </div>
+          <div class="contact-row">
+            <span>Telefon</span>
+            <span
+              >📞 Tirane,Kombinat
+              <a
+                href="tel:+355674474166"
+                style="text-decoration: none; color: white"
+              >
+                +355 67 447 4166</a
+              ></span
+            >
+            <span
+              >📞 Elbasan
+              <a
+                href="tel:+355673710166"
+                style="text-decoration: none; color: white"
+                >+355 67 371 0166</a
+              >
+            </span>
+          </div>
+          <div class="contact-row">
+            <span>Instagram</span>
+            <span>🅾 @newwisdomelbasan</span>
+            <span>🅾 @newwisdomkombinat</span>
+  
+          </div>
+          <div class="contact-row">
+            <span>Email</span>
+            <span>✉ newwisdomkombinat@gmail.com</span>
+          </div>
+        </div>
+      </div>
+  
+      <div class="footer-col footer-col-3">
+        <div class="col-title">
+          <h3>Zbuloni me shume!</h3>
+        </div>
+        <div class="col-contents">
+          <a href="index.html">Kreu</a>
+          <a href="index.html#courses">Kurset</a>
+          <a href="kontakt.html">Kontakt</a>
+          <a href="galeria.html">Rreth Nesh</a>
+          <a href="index.html#kliente">Kliente</a>
+        </div>
+      </div>
+  
+      
+  
+    </div>
+    <!--   === Footer Contents Ends ===   -->
+    <div class="copy-rights">
+      <p>Created By <b>Altea K.</b> All Rights Reserved</p>
+    </div>
+  
+  </section>
+  <!--   *** Footer Section Ends ***   -->
+  <!-- Footer Section Ends -->
+
+</div>
+<!-- Website Container Ends -->
+
+<!-- Link To JQuery -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+
+<!-- Link To Owl Carousel -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+<!-- Link To Custom Script File -->
+<script type="text/javascript" src="script.js"></script>
 </body>
 </html>
