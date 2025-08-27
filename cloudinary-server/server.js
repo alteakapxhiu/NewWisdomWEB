@@ -5,7 +5,11 @@ import dotenv from 'dotenv';
 import cors from 'cors';
 import { initializeApp, cert } from 'firebase-admin/app';
 import { getFirestore } from 'firebase-admin/firestore';
-import serviceAccount from './serviceAccountKey.json' assert { type: "json" };
+import fs from 'fs';
+import path from 'path';
+
+const serviceAccountPath = path.resolve('./serviceAccountKey.json');
+const serviceAccount = JSON.parse(fs.readFileSync(serviceAccountPath, 'utf8'));
 
 dotenv.config();
 
