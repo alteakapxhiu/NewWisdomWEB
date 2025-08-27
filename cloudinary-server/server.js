@@ -3,8 +3,18 @@ import multer from 'multer';
 import { v2 as cloudinary } from 'cloudinary';
 import dotenv from 'dotenv';
 import cors from 'cors';
+import { initializeApp, cert } from 'firebase-admin/app';
+import { getFirestore } from 'firebase-admin/firestore';
+import serviceAccount from './serviceAccountKey.json' assert { type: "json" };
 
 dotenv.config();
+
+const app = express();
+app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
+
+app.use(cors());
+const upload = multer({ storage: multer.memoryStorage() });
 
 cloudinary.config({
     cloud_name: process.env.CLOUDINARY_CLOUD_NAME,
@@ -12,27 +22,68 @@ cloudinary.config({
     api_secret: process.env.CLOUDINARY_API_SECRET,
 });
 
-const app = express();
-app.use(cors());
-const upload = multer({ storage: multer.memoryStorage() });
 
-app.post('/upload', upload.single('file'), async (req, res) => {
+initializeApp({
+    credential: cert(serviceAccount),
+});
+const db = getFirestore();
+
+
+
+// CV Submission
+app.post('/submit-cv', upload.single('file'), async (req, res) => {
     try {
         if (!req.file) return res.status(400).json({ error: 'No file uploaded' });
 
+        const { fullName, email, phone } = req.body;
+
         const stream = cloudinary.uploader.upload_stream(
             { folder: 'cvs' },
-            (error, result) => {
-                if (error) return res.status(500).json({ error });
-                res.json({ url: result.secure_url });
+            async (error, result) => {
+                if (error) return res.status(500).json({ error: error.message });
+
+                await db.collection('submissions').add({
+                    fullName,
+                    email,
+                    phone,
+                    cvURL: result.secure_url,
+                    timestamp: new Date(),
+                });
+
+                res.json({ url: result.secure_url, message: "CV submitted successfully" });
             }
         );
 
         stream.end(req.file.buffer);
+
     } catch (err) {
         res.status(500).json({ error: err.message });
     }
 });
+
+// Contact Form Submission
+app.post('/submit-contact', async (req, res) => {
+    try {
+        const { fullName, phone, message } = req.body;
+
+        if (!fullName || !phone || !message) {
+            return res.status(400).json({ error: "All fields are required" });
+        }
+
+        await db.collection('contacts').add({
+            fullName,
+            phone,
+            message,
+            timestamp: new Date()
+        });
+
+        res.json({ message: "Contact form submitted successfully" });
+
+    } catch (err) {
+        res.status(500).json({ error: err.message });
+    }
+});
+
 
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
