@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link rel="stylesheet" type="text/css" href="style.css" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
       crossorigin="anonymous"
     />
+
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
@@ -34,6 +34,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
     />
 
+    <link rel="stylesheet" type="text/css" href="style.css" />
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
@@ -165,9 +166,9 @@
         }
       </style>
       <section class="partners">
-        <h3>
+        <h2 class="fontcolorwhite">
           Kurse pergatitore per provimet vendase dhe nderkombetare te gjuheve
-        </h3>
+        </h2>
         <div class="owl-carousel owl-theme partners-slider">
           <div class="item brand-item">
             <img src="images/brand-logos/matoontapa.png" />
@@ -234,22 +235,27 @@
       <section class="courses" id="courses">
         <!--   *** Courses Header Starts ***   -->
         <header class="section-header">
-          <div class="header-text">
-            <h1>Cfare kursesh ofrojme</h1>
-            <p>
-              Te NEW WISDOM, ofrojmë një gamë të gjerë kursesh për t'ju ndihmuar
-              të arrini qëllimet tuaja. Kurset tona janë të dizajnuara për t'ju
-              ofruar njohuri të thelluara dhe aftësi praktike në komunikim.
-            </p>
+          <div class="header-text m-auto">
+            <div class="container">
+              <h1 style="text-align: center">KURSE GJUHESH TE HUAJA</h1>
+              <p>
+                Te NEW WISDOM, ofrojmë një gamë të gjerë kursesh për t'ju
+                ndihmuar të arrini qëllimet tuaja. Kurset tona janë të
+                dizajnuara për t'ju ofruar njohuri të thelluara dhe aftësi
+                praktike në komunikim.
+              </p>
+              <hr style="color: blue" />
+
+              <!--  <button class="courses-btn btn">Shiko Te Tera</button> -->
+            </div>
           </div>
-          <button class="courses-btn btn">Shiko Te Tera</button>
         </header>
         <!--   *** Courses Header Ends ***   -->
         <!--   *** Courses Contents Starts ***   -->
         <div class="course-contents">
           <a
             href="anglisht.html"
-            style="text-decoration: none"
+            style="text-decoration: none; background-color: #6c8ced3f"
             class="course-card"
           >
             <img src="images/courses/anglisht.png" />
@@ -270,7 +276,7 @@
 
           <a
             href="italisht.html"
-            style="text-decoration: none"
+            style="text-decoration: none; background-color: #6c8ced3f"
             class="course-card"
           >
             <img src="images/courses/italisht.png" />
@@ -291,7 +297,7 @@
 
           <a
             href="gjermanisht.html"
-            style="text-decoration: none"
+            style="text-decoration: none; background-color: #6c8ced3f"
             class="course-card"
           >
             <img src="images/courses/gjermanisht.png" />
@@ -380,13 +386,14 @@
       <!--   *** Courses Categories Section Starts ***   -->
       <section class="categories">
         <!--   === Categories Section Header Starts ===   -->
-        <header class="section-header">
-          <h1>Shfleto Kurset ne baze te Gjuhes</h1>
-          <p>
+        <header class="section-header m-auto">
+          <h1 style="text-align: center">LISTA E PLOTE E KURSEVE</h1>
+          <p style="text-align: center">
             Zgjidhni nga një gamë e gjerë kursesh të disponueshme në gjuhën që
             ju përshtatet më së miri. Ne ofrojmë mundësi për të mësuar në disa
             gjuhë, duke e bërë mësimin më të lehtë dhe të aksesueshëm për ju.
           </p>
+          <hr style="color: blue" />
         </header>
         <!--   === Categories Section Header Ends ===   -->
         <!--   === Categories Section Contents Starts ===   -->
@@ -492,14 +499,15 @@
       <!--   *** Rreth Nesh Section Starts ***   -->
       <section class="services" id="rrethnesh">
         <!--   *** Rreth Nesh Header Starts ***   -->
-        <header class="section-header">
-          <h1>Ne NEW WISDOM do te gjeni</h1>
-          <p>
+        <header class="section-header m-auto">
+          <h1 style="text-align: center">Ne NEW WISDOM do te gjeni</h1>
+          <p style="text-align: center">
             Te NEW WISDOM ofrojmë orare fleksibël, staf të kualifikuar dhe
             cilësi të lartë në mësimdhënie. Me përkushtim dhe profesionalizëm,
             ne ju ndihmojmë të arrini suksesin që meritoni. Bashkohuni me ne për
             një rrugëtim drejt dijes dhe zhvillimit!
           </p>
+          <hr style="color: blue" />
         </header>
         <!--   *** Rreth Nesh Header Ends ***   -->
         <!--   *** Rreth Nesh Contents Starts ***   -->
@@ -588,7 +596,23 @@
       <!--   *** Teacher Section Starts ***   -->
       <section class="instructor" id="kontakt">
         <div class="instructor-container">
-          <h2>Na Kontaktoni !</h2>
+          <div
+            style="
+              display: flex;
+              align-items: center;
+              gap: 15px;
+              margin-bottom: 20px;
+            "
+          >
+            <img
+              src="./images/brand-logos/PhoneContactIcon.png"
+              style="width: 50px"
+              alt="Phone Icon"
+            />
+            <h2 style="color: rgb(24, 40, 134); margin: 0; font-size: 30px">
+              Na Kontaktoni !
+            </h2>
+          </div>
           <p>
             Dëshironi të merrni informacion më të personalizuar rreth nevojave
             tuaja? Ne jemi këtu për t'ju ofruar informacion dhe këshilla të
@@ -599,14 +623,19 @@
             class="teacher-btn btn"
             onclick="window.open('https://www.instagram.com/newwisdomelbasan/', '_blank')"
           >
-            <i class="fab fa-instagram"></i> Na Kontakto
+            <i class="fab fa-instagram"></i>
           </button>
-
+          <button
+            class="teacher-btn btn"
+            onclick="window.open('https://www.facebook.com/p/New-Wisdom-Elbasan-100063075856831/?locale=sq_AL', '_blank')"
+          >
+            <i class="fab fa-facebook"></i>
+          </button>
           <button
             class="teacher-btn btn"
             onclick="window.open('https://api.whatsapp.com/send/?phone=355674474166&text=fff&type=phone_number&app_absent=0', '_blank')"
           >
-            <i class="fab fa-whatsapp"></i> Na Kontakto
+            <i class="fab fa-whatsapp"></i> WhatsApp
           </button>
         </div>
       </section>
