@@ -3,9 +3,13 @@ import multer from 'multer';
 import { v2 as cloudinary } from 'cloudinary';
 import dotenv from 'dotenv';
 import cors from 'cors';
-import fs from 'fs';
 import { initializeApp, cert } from 'firebase-admin/app';
 import { getFirestore } from 'firebase-admin/firestore';
+import fs from 'fs';
+import path from 'path';
+
+const serviceAccountPath = path.resolve('./serviceAccountKey.json');
+const serviceAccount = JSON.parse(fs.readFileSync(serviceAccountPath, 'utf8'));
 
 dotenv.config();
 
@@ -16,7 +20,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(cors({
     origin: [
         'http://127.0.0.1:5500',
-        'https://newisdomcenter.vercel.app'
+        "https://newisdomcenter.vercel.app"
     ]
 }));
 
@@ -28,12 +32,10 @@ cloudinary.config({
     api_secret: process.env.CLOUDINARY_API_SECRET,
 });
 
-const serviceAccountPath = process.env.FIREBASE_SERVICE_ACCOUNT_PATH;
-if (!serviceAccountPath) throw new Error('FIREBASE_SERVICE_ACCOUNT_PATH is not set');
 
-const serviceAccount = JSON.parse(fs.readFileSync(serviceAccountPath, 'utf8'));
-
-initializeApp({ credential: cert(serviceAccount) });
+initializeApp({
+    credential: cert(serviceAccount),
+});
 const db = getFirestore();
 
 
