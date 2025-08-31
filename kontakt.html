@@ -445,6 +445,11 @@
 </div>
 
   <input type="submit" value="Dergo Mesazh">
+  <div id="loadingSpinner" class="text-center mt-3" style="display: none;">
+  <div class="spinner-border text-primary" role="status">
+    <span class="visually-hidden">Loading...</span>
+  </div>
+</div>
 <a class="ssolink" href="https://www.instagram.com/newwisdomelbasan/" target="_blank">
                     Ose na shkruani ne Instagram DM
                   </a>
@@ -458,12 +463,16 @@ const API_BASE = window.location.hostname === "127.0.0.1" || window.location.hos
     ? "http://localhost:5000" // local backend
     : "https://newwisdomweb.onrender.com";  // deployed backend
 
+  const loadingSpinner = document.getElementById("loadingSpinner");
+
   document.getElementById("contactForm").addEventListener("submit", async (e) => {
   e.preventDefault();
 
   const fullName = document.getElementById("fullName").value;
   const phone = document.getElementById("phone").value;
   const message = document.getElementById("message").value;
+
+  loadingSpinner.style.display = "block";
 
   try {
     const response = await fetch(`${API_BASE}/submit-contact`, {
@@ -482,9 +491,11 @@ const API_BASE = window.location.hostname === "127.0.0.1" || window.location.hos
     } else {
       alert("Error: " + data.error);
     }
-  } catch (err) {
+} catch (err) {
     console.error(err);
     alert("Something went wrong. Please try again.");
+  } finally {
+    loadingSpinner.style.display = "none";
   }
 });
 

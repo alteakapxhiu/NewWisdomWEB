@@ -617,6 +617,15 @@ a {
 /*   === Courses Section Styling Ends ===   */
 
 /*   === Courses Categories Section Styling Starts ===   */
+.section-categories-header {
+  display: flex;
+  justify-content: center;  
+  align-items: center;      
+  text-align: center;       
+  position: relative;
+ justify-content: space-between;
+padding: 15px 8% 20px;
+}
 section.categories{
 	width: 100%;
 	padding: 100px 8% 20px;
@@ -1241,3 +1250,11 @@ section.footer{
 	font-weight: 500;
 	padding-bottom: 4%;
 }
+
+
+
+
+
+
+
+

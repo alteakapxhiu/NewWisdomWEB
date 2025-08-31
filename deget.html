@@ -1,24 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- Link To Custom CSS Style Sheet -->
+
   <link rel="stylesheet" type="text/css" href="style.css">
-
-  <!-- Link To Font Awesome Icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"/>
-
-  <!-- Link To Owl Carousel -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
-
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <title>New Wisdom Center</title>
 </head>
 <body>
-  <!-- Website Container Starts -->
+
   <div class="website-container">
-    
-    <!-- Home Section Starts -->
     <section class="home" id="home">
       <nav class="main-navbar">
         <a href="index.html" class="logo">
@@ -45,26 +39,30 @@
 
         <!-- *** Locations Section Starts *** -->
         <section class="locations" id="locations">
-          <header class="section-header">
-            <h1>Deget e Qendres New Wisdom</h1>
+          <header class="section-header" style="text-align: center;">
+            <h1 style="padding-top:5%; text-align: center;">Deget e Qendres New Wisdom</h1>
+            <hr style="border: 1px solid rgba(0, 0, 239, 0.378); width: 60%; margin: 10px auto;" />
           </header>
-           <address><p>
-                Institucioni ynë, New Wisdom, është i pranishëm për t’ju shërbyer në dy lokacione: 
+           <address>
+            <p style="text-align: center;">
+                Institucioni ynë, New Wisdom, është i pranishëm për t’ju shërbyer në dy lokacione: <br/>
                 <a href="https://www.google.com/maps/place/Lagjen+Kala,+prane+xhamise+Mbret+ne+Elbasan" style="color: blue; font-weight: bold; text-decoration: none;">
+                <i class="fa-solid fa-location-dot" style="color: blue;"></i>
+
                     Lagjen Kala, pranë xhamisë "Mbret" në Elbasan
                 </a>, 
                 si dhe në 
+                
                 <a href="https://www.google.com/maps/place/Tirane,+prane+shkolles+Betim+Muco+ne+Kombinat" style="color: blue; font-weight: bold; text-decoration: none;">
+                  <i class="fa-solid fa-location-dot" style="color: blue;"></i>
                     Tiranë, pranë shkollës "Betim Muço" në Kombinat
                 </a>. 
-                <hr style="padding:2px; background-color:#bed0ee; border:none; height:1px;"/>
-                <br>Ju mirëpresim nga ora 9:00 - 17:00!
-            </p></address> 
-                      
-            <hr style="padding:10px; background-color:#bed0ee; border:none; height:2px;"/>
-
+                <p style="text-align: center; padding-bottom: 5%;">Ju mirëpresim nga ora 9:00 - 17:00!</p>
+            </p>
+          </address> 
+  
+       <!-- Location 1: Elbasan -->
           <div class="locations-container">
-            <!-- Location 1: Elbasan -->
             <div class="location-box">
               <div class="location-content">
                 <div class="location-img">
@@ -75,16 +73,23 @@
                 </div>
               </div>
               <h2>DEGA - Elbasan</h2>
-              <hr style="padding:10px; background-color:white; border:none; height:2px;"/>
-               <a href="https://maps.app.goo.gl/BchgpnAufv1vgdJz5"><button class="teacher-btn btn">
+              <hr style="padding:10px; background-color:rgb(248, 248, 248); border:none; height:2px;"/>
+
+               <a href="https://maps.app.goo.gl/BchgpnAufv1vgdJz5">
+                <button class="teacher-btn btn">
                 <i class="fas fa-map-marker-alt"></i> Vendodhja
              </button></a>
+
+             <a href="https://maps.app.goo.gl/BchgpnAufv1vgdJz5">
              <button class="teacher-btn btn">
               <i class="fas fa-phone-alt"></i> Telefon
              </button>
+            </a>
+            <a href="https://www.instagram.com/newwisdomelbasan/">
              <button class="teacher-btn btn">
                 <i class="fab fa-instagram"></i>
               </button>
+            </a>
             </div>
 
             <!-- Location 2: Tirana -->
@@ -98,7 +103,7 @@
                 </div>
               </div>
               <h2>DEGA - Tiranë,Kombinat</h2>
-              <hr style="padding:10px; background-color:white; border:none; height:2px;"/>
+              <hr style="padding:10px; background-color:rgb(248, 248, 248); border:none; height:2px;"/>
             <a href="https://maps.app.goo.gl/F6tB25ifJEqhgEz99">
               <button class="teacher-btn btn">
                 <i class="fas fa-map-marker-alt"></i> Vendodhja
@@ -106,17 +111,17 @@
              <button class="teacher-btn btn">
               <i class="fas fa-phone-alt"></i> Telefon
              </button>
+            <a href="https://www.instagram.com/newwisdomkombinat/">
              <button class="teacher-btn btn">
                 <i class="fab fa-instagram"></i>
               </button>
+            </a>
             </div>
           </div>
         </section>
-        <!-- *** Locations Section Ends *** -->
 
       </div>
     </section>
-    <!-- Home Section Ends -->
 
 <!--   *** Ambjentet Elbasan Section Starts ***   -->
 <style>
@@ -135,16 +140,14 @@
   }
   
   .owl-carousel .owl-nav button.owl-next {
-      right: -15px; /* Adjust right button position */
+      right: -15px; 
   }
   
-  /* Optional: Add hover effects for buttons */
   .owl-carousel .owl-nav button.owl-prev:hover,
   .owl-carousel .owl-nav button.owl-next:hover {
-      color: #007BFF; /* Change color on hover */
+      color: #007BFF; 
   }
-  
-     </style>
+  </style>
 <section class="partners" style="width: 100%; padding: 30px 8%; background-color: var(--primary-medium-clr);">
   <header class="section-header">
     <h1>Ambjentet e Deges Elbasan</h1>
@@ -173,7 +176,6 @@
     </div>
   </div>
 </section>
-<!--   *** Ambjentet Elbasan Section Ends ***   -->
 
 <!--   *** Ambjentet Tirane Section Starts ***   -->
 <section class="partners" style="width: 100%; padding: 30px 8%; background-color: var(--primary-medium-clr);">
@@ -205,12 +207,9 @@
   </div>
 </section>
 
-<!--   *** Ambjentet Tirane Section Ends ***   -->
-
+<!--   === Footer Contents Starts ===   -->
 
 <section class="footer" id="footer">
-	
-	<!--   === Footer Contents Starts ===   -->
 	<div class="footer-contents">
 		
 		<div class="footer-col footer-col-1">
@@ -279,28 +278,35 @@
 				<a href="index.html#kliente">Kliente</a>
 			</div>
 		</div>
-
-		
-
 	</div>
-	<!--   === Footer Contents Ends ===   -->
+
 	<div class="copy-rights">
 		<p>Created By <b>Altea K.</b> All Rights Reserved</p>
 	</div>
 
 </section>
-<!--   *** Footer Section Ends ***   -->
 
   </div>
-  <!-- Website Container Ends -->
 
-  <!-- Link To JQuery -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
 
-  <!-- Link To Owl Carousel -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+<script>
+  $(document).ready(function() {
+    $('.partners-slider .item img').wrap(function() {
+      return '<a href="' + $(this).attr('src') + '" class="popup-link"></a>';
+    });
 
-  <!-- Link To Custom Script File -->
-  <script type="text/javascript" src="script.js"></script>
+    $('.popup-link').magnificPopup({
+      type: 'image',
+      gallery: {
+        enabled: true 
+      }
+    });
+  });
+</script>
+
+<script type="text/javascript" src="script.js"></script>
 </body>
 </html>

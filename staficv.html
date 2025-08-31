@@ -453,6 +453,11 @@
 
 </div>
 <input type="submit" value="Submit CV">
+<div id="cvLoadingSpinner" class="text-center mt-3" style="display: none;">
+  <div class="spinner-border text-primary" role="status">
+    <span class="visually-hidden">Loading...</span>
+  </div>
+</div>
 </form>
 
                <a class="ssolink" href="https://www.instagram.com/newwisdomelbasan/" target="_blank">
@@ -463,6 +468,8 @@
 const API_BASE = window.location.hostname === "127.0.0.1" || window.location.hostname === "localhost"
     ? "http://localhost:5000" // local backend
     : "https://newwisdomweb.onrender.com"; 
+
+const cvSpinner = document.getElementById("cvLoadingSpinner");
 
 document.getElementById("cvForm").addEventListener("submit", async (e) => {
   e.preventDefault();
@@ -476,6 +483,8 @@ document.getElementById("cvForm").addEventListener("submit", async (e) => {
     alert("Please select a CV file to upload!");
     return;
   }
+
+  cvSpinner.style.display = "block";
 
   try {
     const formData = new FormData();
@@ -494,15 +503,17 @@ document.getElementById("cvForm").addEventListener("submit", async (e) => {
 
     alert("✅ CV submitted successfully!");
     e.target.reset();
-  } catch (err) {
+ } catch (err) {
     console.error("Error submitting CV:", err);
     alert("❌ Something went wrong. Please try again.");
+  } finally {
+    cvSpinner.style.display = "none";
   }
 });
 </script>
 
               
-              <style>
+            <style>
                 .stripe-login-form {
                   font-family: Arial, sans-serif;
                   width: 100%;
