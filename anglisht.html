@@ -13,7 +13,15 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <title>New Wisdom Center</title>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-6BRW50QJFG"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
+  gtag('config', 'G-6BRW50QJFG');
+</script>
 </head>
 <body>
   <!-- Website Container Starts -->
@@ -26,15 +34,28 @@
           <img src="images/home/logo.png" width="100px">
         </a>
         <ul class="nav-list">
-          <li><a href="index.html">Kreu</a></li>
-          <li><a href="index.html#courses">Kurset</a></li>
-          <li><a href="deget.html">Pikat</a></li>
-          <li><a href="galeria.html">Galeria</a></li>
-          <li><a href="index.html#rrethnesh">Rreth Nesh</a></li>
-          <li><a href="index.html#kontakt">Kontakt</a></li>
-          <li><a href="index.html#kliente">Kliente</a></li>
-          <li><a href="staficv.html">Puno me ne</a></li>
-        </ul>
+            <li><a href="index.html">Kreu</a></li>
+            <li><a href="index.html#courses">Kurset</a></li>
+            <li><a href="deget.html">Pikat</a></li>
+            <li><a href="galeria.html">Galeria</a></li>
+            <li><a href="index.html#rrethnesh">Rreth Nesh</a></li>
+            <li><a href="kontakt.html">Kontakt</a></li>
+            <li><a href="index.html#kliente">Kliente</a></li>
+            <li><a href="staficv.html">Puno me ne</a></li>
+
+            <!-- Social Media (only visible on mobile) -->
+            <li class="mobile-socials">
+              <a href="https://www.instagram.com/newwisdomelbasan/" target="_blank"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a href="https://api.whatsapp.com/send/?phone=355674474166&text=fff&type=phone_number&app_absent=0" target="_blank"
+                ><i class="fab fa-whatsapp"></i
+              ></a>
+              <a href="https://www.tiktok.com/@newisdomcenter" target="_blank"
+                ><i class="fab fa-tiktok"></i
+              ></a>
+            </li>
+          </ul>
         <a href="#" class="get-started-btn-container">
           <button class="get-started-btn btn">Meso me shume</button>
         </a>
@@ -110,6 +131,30 @@
 		margin: 10px 0;
 	  }
 	}
+	/* Hide social icons on desktop */
+.mobile-socials {
+  display: none;
+  text-align: center;
+  margin-top: 15px;
+}
+
+.mobile-socials a {
+  margin: 0 10px;
+  font-size: 22px;
+  color: #000; 
+  transition: color 0.3s ease;
+}
+
+.mobile-socials a:hover {
+  color: #007bff; 
+}
+
+@media (max-width: 768px) {
+  .mobile-socials {
+    display: block;
+  }
+}
+
   </style>
   
    <!--   *** Courses Section Starts ***   -->
@@ -118,12 +163,10 @@
 	  const courses = document.querySelectorAll(".course-card");
 	  const viewAllButton = document.querySelector(".courses-btn");
 	  
-	  // Show the first three courses by default
 	  for (let i = 0; i < 6; i++) {
 		if (courses[i]) courses[i].classList.add("visible");
 	  }
 	  
-	  // Toggle visibility on button click
 	  viewAllButton.addEventListener("click", () => {
 		const hiddenCourses = Array.from(courses).filter(
 		  (course) => !course.classList.contains("visible")
@@ -154,13 +197,19 @@
 <section class="courses" id="courses">
 	<!--   *** Courses Header Starts ***   -->
 	<header class="section-header">
-		<div class="header-text">
-			<h1>Cfare kursesh ofrojme</h1>
-			<p>Te NEW WISDOM, ofrojmë një gamë të gjerë kursesh për t'ju ndihmuar të arrini qëllimet tuaja. Kurset tona janë të dizajnuara për t'ju ofruar njohuri të thelluara dhe aftësi praktike në komunikim.</p>
-		</div>
-		<button class="courses-btn btn">Shiko Te Tera</button>
-	</header>
-	<!--   *** Courses Header Ends ***   -->
+  <div class="container m-auto text-center">
+    <h1 class="mb-3 m-auto"
+        style="text-align: center; max-width: 100%; margin: 0 auto;">
+      Cfare kursesh ofrojme
+    </h1>
+    <p class="lead" style="text-align: center; max-width: 100%; margin: 0 auto;padding: 2%;">
+      Te NEW WISDOM, ofrojmë një gamë të gjerë kursesh për t'ju ndihmuar të arrini qëllimet tuaja. 
+      Kurset tona janë të dizajnuara për t'ju ofruar njohuri të thelluara dhe aftësi praktike në komunikim.
+    </p>
+  </div>
+</header>
+<hr style="border: 0; height: 0.5px; background-color: blue; margin-bottom: 20px;">
+
 	<!--   *** Courses Contents Starts ***   -->
 	<div class="course-contents">
 		<a href="AnglishtDetaje.html?course=fillestar"
@@ -172,14 +221,14 @@
 				<div class="subject"><h3>Anglisht</h3></div>
 				<img src="images/courses/Ang_Flag.jpg">
 			</div>
-			<h2 class="course-title">Anglisht Fillestar A1-A2</h2>
+			<h2 class="course-title">Anglisht Fillestar per Femije A1-A2</h2>
 			<div class="course-desc">
-				<span><i class="fa-solid fa-video"></i> xx Seanca</span>
+				<span><i class="fa-solid fa-video"></i> 60-80 Seanca</span>
 				<span><i class="fa-solid fa-users"></i> Grup/Individual</span>
 			</div>
 			<div class="course-ratings">
 				<span>4.9 <i class="fa-solid fa-star"></i></span>
-				<span><b>Cmimi</b>Sipas Nivelit</span>
+				<span><b>A1-A2</b></span>
 			</div>
 		</div>
 		</a>
@@ -195,12 +244,12 @@
 			</div>
 			<h2 class="course-title">Anglisht Mesatar B1-B2</h2>
 			<div class="course-desc">
-				<span><i class="fa-solid fa-video"></i> xx Seanca</span>
+				<span><i class="fa-solid fa-video"></i> 45 Seanca</span>
 				<span><i class="fa-solid fa-users"></i> Grup/Individual</span>
 			</div>
 			<div class="course-ratings">
 				<span>4.9 <i class="fa-solid fa-star"></i></span>
-				<span><b>Cmimi</b>Sipas Nivelit</span>
+				<span><b>B1-B2</b></span>
 			</div>
 		</div>
 		</a>
@@ -221,7 +270,7 @@
 			</div>
 			<div class="course-ratings">
 				<span>4.9 <i class="fa-solid fa-star"></i></span>
-				<span><b>Cmimi</b>Sipas Nivelit</span>
+				<span><b>C1-C2</b></span>
 			</div>
 		</div>
 </a>
@@ -230,19 +279,19 @@
 style="text-decoration: none"
 >
 <div class="course-card" style="background-color: rgb(255, 255, 255)" >
-	<img src="images/courses/AnglishtAllLevels.png">
+	<img src="images/courses/AnglishtFillestar.png">
 	<div class="category">
 		<div class="subject"><h3>Anglisht</h3></div>
 		<img src="images/courses/Ang_Flag.jpg">
 	</div>
-	<h2 class="course-title">Anglisht Fillestar A1-C2</h2>
+	<h2 class="course-title">Anglisht Fillestar per te rritur A1-A2</h2>
 	<div class="course-desc">
-		<span><i class="fa-solid fa-video"></i> xx Seanca</span>
+		<span><i class="fa-solid fa-video"></i> 30 Seanca</span>
 		<span><i class="fa-solid fa-users"></i> Grup/Individual</span>
 	</div>
 	<div class="course-ratings">
 		<span>4.9 <i class="fa-solid fa-star"></i></span>
-		<span><b>Cmimi</b>Sipas Nivelit</span>
+		<span><b>A1-A2</b></span>
 	</div>
 </div>
 </a>
@@ -256,14 +305,14 @@ style="text-decoration: none"
 		<div class="subject"><h3>Anglisht </h3></div>
 		<img src="images/courses/Ang_Flag.jpg">
 	</div>
-	<h2 class="course-title">Anglisht Online te gjitha nivelet</h2>
+	<h2 class="course-title">Anglisht Online te gjitha nivelet A1-C2</h2>
 	<div class="course-desc">
-		<span><i class="fa-solid fa-video"></i> xx Seanca</span>
+		<span><i class="fa-solid fa-video"></i> 45-80 Seanca</span>
 		<span><i class="fa-solid fa-users"></i> Grup/Individual</span>
 	</div>
 	<div class="course-ratings">
 		<span>4.9 <i class="fa-solid fa-star"></i></span>
-		<span><b>Cmimi</b>Sipas Nivelit</span>
+		<span><b>A1-C2</b></span>
 	</div>
 </div>
 </a>
@@ -284,10 +333,12 @@ style="text-decoration: none"
 	</div>
 	<div class="course-ratings">
 		<span>4.9 <i class="fa-solid fa-star"></i></span>
-		<span><b>Cmimi</b>Sipas Nivelit</span>
+		<span><b>TE GJITHA NIVELET</b></span>
 	</div>
 </div>
 </a>
+			<!--<button class="courses-btn btn">Shiko Te Tera</button> -->
+
     </section>
 	</div>
 	<!--   *** Courses Contents Ends ***   -->

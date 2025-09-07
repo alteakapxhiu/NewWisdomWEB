@@ -8,6 +8,15 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-6BRW50QJFG"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-6BRW50QJFG');
+</script>
   <title>New Wisdom Center</title>
 </head>
 <body>
@@ -18,16 +27,29 @@
         <a href="index.html" class="logo">
           <img src="images/home/logo.png" width="100px">
         </a>
-        <ul class="nav-list">
-          <li><a href="index.html">Kreu</a></li>
-          <li><a href="index.html#courses">Kurset</a></li>
-          <li><a href="deget.html">Pikat</a></li>
-          <li><a href="galeria.html">Galeria</a></li>
-          <li><a href="index.html#rrethnesh">Rreth Nesh</a></li>
-          <li><a href="kontakt.html">Kontakt</a></li>
-          <li><a href="index.html#kliente">Kliente</a></li>
-          <li><a href="staficv.html">Puno me ne</a></li>
-        </ul>
+      <ul class="nav-list">
+            <li><a href="index.html">Kreu</a></li>
+            <li><a href="index.html#courses">Kurset</a></li>
+            <li><a href="deget.html">Pikat</a></li>
+            <li><a href="galeria.html">Galeria</a></li>
+            <li><a href="index.html#rrethnesh">Rreth Nesh</a></li>
+            <li><a href="kontakt.html">Kontakt</a></li>
+            <li><a href="index.html#kliente">Kliente</a></li>
+            <li><a href="staficv.html">Puno me ne</a></li>
+
+            <!-- Social Media (only visible on mobile) -->
+            <li class="mobile-socials">
+              <a href="https://www.instagram.com/newwisdomelbasan/" target="_blank"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a href="https://api.whatsapp.com/send/?phone=355674474166&text=fff&type=phone_number&app_absent=0" target="_blank"
+                ><i class="fab fa-whatsapp"></i
+              ></a>
+              <a href="https://www.tiktok.com/@newisdomcenter" target="_blank"
+                ><i class="fab fa-tiktok"></i
+              ></a>
+            </li>
+          </ul>
         <a href="#" class="get-started-btn-container">
           <button class="get-started-btn btn">Meso me shume</button>
         </a>
@@ -146,6 +168,31 @@
   .owl-carousel .owl-nav button.owl-next:hover {
       color: #007BFF; 
   }
+  /* Hide social icons on desktop */
+.mobile-socials {
+  display: none;
+  text-align: center;
+  margin-top: 15px;
+}
+
+.mobile-socials a {
+  margin: 0 10px;
+  font-size: 22px;
+  color: #000; /* change color */
+  transition: color 0.3s ease;
+}
+
+.mobile-socials a:hover {
+  color: #007bff; /* hover color */
+}
+
+/* Show on mobile when menu is open */
+@media (max-width: 768px) {
+  .mobile-socials {
+    display: block;
+  }
+}
+
   </style>
 <section class="partners" style="width: 100%; padding: 30px 8%; background-color: var(--primary-medium-clr);">
   <header class="section-header">

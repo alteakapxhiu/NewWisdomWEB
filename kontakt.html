@@ -18,6 +18,15 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-6BRW50QJFG"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-6BRW50QJFG');
+</script>
   <title>New Wisdom Center</title>
 
 </head>
@@ -32,15 +41,28 @@
           <img src="images/home/logo.png" width="100px">
         </a>
         <ul class="nav-list">
-          <li><a href="index.html">Kreu</a></li>
-          <li><a href="index.html#courses">Kurset</a></li>
-          <li><a href="deget.html">Pikat</a></li>
-          <li><a href="galeria.html">Galeria</a></li>
-          <li><a href="index.html#rrethnesh">Rreth Nesh</a></li>
-          <li><a href="index.html#kontakt">Kontakt</a></li>
-          <li><a href="index.html#kliente">Kliente</a></li>
-          <li><a href="staficv.html">Puno me ne</a></li>
-        </ul>
+            <li><a href="index.html">Kreu</a></li>
+            <li><a href="index.html#courses">Kurset</a></li>
+            <li><a href="deget.html">Pikat</a></li>
+            <li><a href="galeria.html">Galeria</a></li>
+            <li><a href="index.html#rrethnesh">Rreth Nesh</a></li>
+            <li><a href="kontakt.html">Kontakt</a></li>
+            <li><a href="index.html#kliente">Kliente</a></li>
+            <li><a href="staficv.html">Puno me ne</a></li>
+
+            <!-- Social Media (only visible on mobile) -->
+            <li class="mobile-socials">
+              <a href="https://www.instagram.com/newwisdomelbasan/" target="_blank"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a href="https://api.whatsapp.com/send/?phone=355674474166&text=fff&type=phone_number&app_absent=0" target="_blank"
+                ><i class="fab fa-whatsapp"></i
+              ></a>
+              <a href="https://www.tiktok.com/@newisdomcenter" target="_blank"
+                ><i class="fab fa-tiktok"></i
+              ></a>
+            </li>
+          </ul>
         <a href="#" class="get-started-btn-container">
           <button class="get-started-btn btn">Meso me shume</button>
         </a>
@@ -304,15 +326,14 @@
           padding: 14px;
         }
         .formbg {
-          max-width: 100%; /* Allow the form to take up more width on mobile */
-          padding: 20px;  /* Add some padding for better spacing */
+          max-width: 100%; 
+          padding: 20px;  
         }
         .formbg-inner span {
           font-size: 16px;
         }
        
       }
-      /* General Styles for the Social Icons */
 .contact-icons {
   display: flex;
   justify-content: center;
@@ -321,29 +342,27 @@
   padding: 20px;
   background-color: #fff; }
 
-/* Icon Styling */
 .contact-icon {
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  background-color: #fff; /* White background for each icon */
-  border: 2px solid #007BFF; /* Blue border */
+  background-color: #fff; 
+  border: 2px solid #007BFF; 
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #007BFF; /* Blue icon color */
-  font-size: 25px; /* Icon size */
+  color: #007BFF;
+  font-size: 25px; 
   text-decoration: none;
   transition: transform 0.3s, background-color 0.3s, color 0.3s;
 }
 
 .contact-icon:hover {
-  background-color: #007BFF; /* Blue background on hover */
-  color: #fff; /* White icon color on hover */
+  background-color: #007BFF; 
+  color: #fff; 
   transform: scale(1.1);
 }
 
-/* Responsive Styling */
 @media screen and (max-width: 768px) {
   .contact-icon {
     width: 40px;
@@ -360,8 +379,7 @@
   }
 }
 
-
-      </style>
+</style>
 
 <body>
 
@@ -422,9 +440,9 @@
                 <a href="tel:+123456789" class="contact-icon" aria-label="Phone">
                   <i class="fas fa-phone"></i>
                 </a>
-                <a href="https://goo.gl/maps/yourgooglemaplink" class="contact-icon" target="_blank" aria-label="Google Maps">
-                  <i class="fas fa-map-marker-alt"></i>
-                </a>
+                <a href="https://www.tiktok.com/@newisdomcenter" class="contact-icon" target="_blank" aria-label="Tik Tok">
+              <i class="fa-brands fa-tiktok"></i>                
+              </a>
               </div>
               
              <form id="contactForm" >
@@ -569,7 +587,29 @@ const API_BASE = window.location.hostname === "127.0.0.1" || window.location.hos
                 .ssolink:hover {
                   text-decoration: underline;
                 }
-                
+                /* Hide social icons on desktop */
+.mobile-socials {
+  display: none;
+  text-align: center;
+  margin-top: 15px;
+}
+
+.mobile-socials a {
+  margin: 0 10px;
+  font-size: 22px;
+  color: #000; 
+  transition: color 0.3s ease;
+}
+
+.mobile-socials a:hover {
+  color: #007bff; 
+}
+
+@media (max-width: 768px) {
+  .mobile-socials {
+    display: block;
+  }
+}
               </style>
               
             </div>

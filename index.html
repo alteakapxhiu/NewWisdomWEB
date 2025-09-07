@@ -36,6 +36,20 @@
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-6BRW50QJFG"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-6BRW50QJFG");
+    </script>
     <title>New Wisdom Center</title>
   </head>
 
@@ -57,8 +71,29 @@
             <li><a href="kontakt.html">Kontakt</a></li>
             <li><a href="index.html#kliente">Kliente</a></li>
             <li><a href="staficv.html">Puno me ne</a></li>
+
+            <!-- Social Media (only visible on mobile) -->
+            <li class="mobile-socials">
+              <a
+                href="https://www.instagram.com/newwisdomelbasan/"
+                target="_blank"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a
+                href="https://api.whatsapp.com/send/?phone=355674474166&text=fff&type=phone_number&app_absent=0"
+                target="_blank"
+                ><i class="fab fa-whatsapp"></i
+              ></a>
+              <a href="https://www.tiktok.com/@newisdomcenter" target="_blank"
+                ><i class="fab fa-tiktok"></i
+              ></a>
+            </li>
           </ul>
-          <a href="#" class="get-started-btn-container">
+
+          <a
+            href="https://www.instagram.com/newwisdomelbasan/"
+            class="get-started-btn-container"
+          >
             <button class="get-started-btn btn">Meso me shume</button>
           </a>
           <div class="menu-btn">
@@ -159,6 +194,30 @@
         .course-card.visible {
           display: block;
         }
+        /* Hide social icons on desktop */
+        .mobile-socials {
+          display: none;
+          text-align: center;
+          margin-top: 15px;
+        }
+
+        .mobile-socials a {
+          margin: 0 10px;
+          font-size: 22px;
+          color: #000; /* change color */
+          transition: color 0.3s ease;
+        }
+
+        .mobile-socials a:hover {
+          color: #007bff; /* hover color */
+        }
+
+        /* Show on mobile when menu is open */
+        @media (max-width: 768px) {
+          .mobile-socials {
+            display: block;
+          }
+        }
       </style>
       <section class="partners">
         <h2 class="fontcolorwhite">
@@ -242,9 +301,9 @@
               <div class="subject"><h3>Anglisht</h3></div>
               <img src="images/courses/Ang_Flag.jpg" />
             </div>
-            <h2 class="course-title">Anglisht te gjitha Nivelet</h2>
+            <h2 class="course-title">Kurse Anglisht</h2>
             <div class="course-desc">
-              <span><i class="fa-solid fa-video"></i> xx Seanca</span>
+              <span><i class="fa-solid fa-video"></i> 45 - 80 Seanca</span>
               <span><i class="fa-solid fa-users"></i> Grup/Individual</span>
             </div>
             <div class="course-ratings">
@@ -263,9 +322,9 @@
               <div class="subject"><h3>Italisht</h3></div>
               <img src="images/courses/IT_Flag.png" />
             </div>
-            <h2 class="course-title">Italisht te gjitha Nivelet</h2>
+            <h2 class="course-title">Kurse Italisht</h2>
             <div class="course-desc">
-              <span><i class="fa-solid fa-video"></i> xx Seanca</span>
+              <span><i class="fa-solid fa-video"></i> 30 - 35 Seanca</span>
               <span><i class="fa-solid fa-users"></i> Grup/Individual</span>
             </div>
             <div class="course-ratings">
@@ -284,9 +343,9 @@
               <div class="subject"><h3>Gjermanisht</h3></div>
               <img src="images/courses/GR_Flag.png" />
             </div>
-            <h2 class="course-title">Gjermanisht te gjitha Nivelet</h2>
+            <h2 class="course-title">Kurse Gjermanisht</h2>
             <div class="course-desc">
-              <span><i class="fa-solid fa-video"></i> xx Seanca</span>
+              <span><i class="fa-solid fa-video"></i> 45 Seanca</span>
               <span><i class="fa-solid fa-users"></i> Grup/Individual</span>
             </div>
             <div class="course-ratings">
@@ -440,13 +499,19 @@
           </div>
           <div class="service-box">
             <div class="service-icon">
-              <img src="images/brand-logos/BashkimFamiljar.png" width="50px" />
+              <img
+                src="https://cdn-icons-png.flaticon.com/256/194/194932.png"
+                width="50px"
+              />
             </div>
             <div class="service-desc">
-              <h2>Kurse per bashkime familiare</h2>
+              <h2>Kurse per studente</h2>
               <p>
-                Kurse pergatitore per bashkime familjare ne Itali,Gjermani dhe
-                vende te tjera.Ofrohet pergatitja per te gjitha nivelet A1-B2.
+                Kurse per studentet qe duan te permiresojne njohurite e tyre,te
+                studiojne jashte shtetit te vazhdojne studimet e tyre master ose
+                te punojne ne nje vend te huaj.Kurrikulat jane te perpunuara me
+                metoda nderkombetare ne menyre qe te arrijme objektivat tuaja ne
+                nje kohe sa me te shkurter dhe efektive.
                 <br /><i
                   >Per me shume informacion rreth situates suaj specifike na
                   kontaktoni!</i
@@ -815,7 +880,9 @@
             </div>
             <p>
               Perfekt fare! 10/10 ⭐ Kursi eshte super praktik dhe zyshat jane
-              shume te komunikueshme.Me ka pelqyer shume!
+              shume te komunikueshme.Mua mu desh per te nisur pune ne Itali dhe
+              me ndihmuan shume.
+              <br />Me ka pelqyer shume!
             </p>
             <div class="quote">
               <i class="fa fa-quote-left"></i>

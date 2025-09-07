@@ -93,6 +93,16 @@ function search() {
         window.location.href = "gjermanisht.html";
     } else if (input.includes("kompjuter")) {
         window.location.href = "kompjuter.html";
+    } else if (input.includes("online")) {
+        window.location.href = "index.html#rrethnesh";
+    } else if (input.includes("individual")) {
+        window.location.href = "index.html#rrethnesh";
+    } else if (input.includes("fizike")) {
+        window.location.href = "index.html#rrethnesh";
+    } else if (input.includes("klase")) {
+        window.location.href = "index.html#rrethnesh";
+    } else if (input.includes("fizikisht")) {
+        window.location.href = "index.html#rrethnesh";
     } else {
         alert("Kursi nuk u gjet!");
     }

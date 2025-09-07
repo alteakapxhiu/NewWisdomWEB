@@ -12,6 +12,15 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-6BRW50QJFG"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-6BRW50QJFG');
+</script>
   <title>New Wisdom Center</title>
 
 </head>
@@ -26,15 +35,28 @@
           <img src="images/home/logo.png" width="100px">
         </a>
         <ul class="nav-list">
-          <li><a href="index.html">Kreu</a></li>
-          <li><a href="index.html#courses">Kurset</a></li>
-          <li><a href="deget.html">Pikat</a></li>
-          <li><a href="galeria.html">Galeria</a></li>
-          <li><a href="index.html#rrethnesh">Rreth Nesh</a></li>
-          <li><a href="index.html#kontakt">Kontakt</a></li>
-          <li><a href="index.html#kliente">Kliente</a></li>
-          <li><a href="staficv.html">Puno me ne</a></li>
-        </ul>
+            <li><a href="index.html">Kreu</a></li>
+            <li><a href="index.html#courses">Kurset</a></li>
+            <li><a href="deget.html">Pikat</a></li>
+            <li><a href="galeria.html">Galeria</a></li>
+            <li><a href="index.html#rrethnesh">Rreth Nesh</a></li>
+            <li><a href="kontakt.html">Kontakt</a></li>
+            <li><a href="index.html#kliente">Kliente</a></li>
+            <li><a href="staficv.html">Puno me ne</a></li>
+
+            <!-- Social Media (only visible on mobile) -->
+            <li class="mobile-socials">
+              <a href="https://www.instagram.com/newwisdomelbasan/" target="_blank"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a href="https://api.whatsapp.com/send/?phone=355674474166&text=fff&type=phone_number&app_absent=0" target="_blank"
+                ><i class="fab fa-whatsapp"></i
+              ></a>
+              <a href="https://www.tiktok.com/@newisdomcenter" target="_blank"
+                ><i class="fab fa-tiktok"></i
+              ></a>
+            </li>
+          </ul>
         <a href="#" class="get-started-btn-container">
           <button class="get-started-btn btn">Meso me shume</button>
         </a>
@@ -110,27 +132,55 @@
 	  }
 	}
   </style>
-   <!--   *** Courses Section Starts ***   -->
 
   <style>
 	.course-card {
-	  display: none; /* Hide all courses by default */
+	  display: none;
 	}
 	.course-card.visible {
-	  display: block; /* Show only visible courses */
+	  display: block; 
 	}
+	/* Hide social icons on desktop */
+.mobile-socials {
+  display: none;
+  text-align: center;
+  margin-top: 15px;
+}
+
+.mobile-socials a {
+  margin: 0 10px;
+  font-size: 22px;
+  color: #000; 
+  transition: color 0.3s ease;
+}
+
+.mobile-socials a:hover {
+  color: #007bff; 
+}
+
+@media (max-width: 768px) {
+  .mobile-socials {
+    display: block;
+  }
+}
   </style>
   
 <section class="courses" id="courses">
 	<!--   *** Courses Header Starts ***   -->
 	<header class="section-header">
-		<div class="header-text">
-			<h1>Cfare kursesh ofrojme</h1>
-			<p>Te NEW WISDOM, ofrojmë një gamë të gjerë kursesh për t'ju ndihmuar të arrini qëllimet tuaja. Kurset tona janë të dizajnuara për t'ju ofruar njohuri të thelluara dhe aftësi praktike në komunikim.</p>
-		</div>
-		<button class="courses-btn btn">Shiko Te Tera</button>
-	</header>
-	<!--   *** Courses Header Ends ***   -->
+  <div class="container m-auto text-center">
+    <h1 class=" m-auto"
+        style="text-align: center; max-width: 100%; margin: 0 auto;">
+      Cfare kursesh ofrojme
+    </h1>
+    <p class="lead" style="text-align: center; max-width: 100%; margin: 0 auto;padding: 2%;">
+      Te NEW WISDOM, ofrojmë një gamë të gjerë kursesh për t'ju ndihmuar të arrini qëllimet tuaja. 
+      Kurset tona janë të dizajnuara për t'ju ofruar njohuri të thelluara dhe aftësi praktike në komunikim.
+    </p>
+  </div>
+</header>  
+<hr style="border: 0; height: 0.5px; background-color: blue; margin-bottom: 20px;">
+
 	<!--   *** Courses Contents Starts ***   -->
 	<div class="course-contents">
 		<a href="ItalishtDetaje.html?course=fillestar"
