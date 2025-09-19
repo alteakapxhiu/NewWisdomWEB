@@ -1,77 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <!-- Link To Custom CSS Style Sheet -->
-  <link rel="stylesheet" type="text/css" href="style.css">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <!-- Link To Font Awesome Icons -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"/>
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <title>New Wisdom Center</title>
 
-  <!-- Link To Owl Carousel -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" type="text/css" href="style.css" />
 
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-6BRW50QJFG"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <!-- Bootstrap 5 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet" />
 
-  gtag('config', 'G-6BRW50QJFG');
-</script>
-  <title>New Wisdom Center</title>
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
 
-</head>
-<style>/* Hide social icons on desktop */
-.mobile-socials {
-  display: none;
-  text-align: center;
-  margin-top: 15px;
-}
-
-.mobile-socials a {
-  margin: 0 10px;
-  font-size: 22px;
-  color: #000; 
-  transition: color 0.3s ease;
-}
-
-.mobile-socials a:hover {
-  color: #007bff; 
-}
-
-@media (max-width: 768px) {
-  .mobile-socials {
-    display: block;
-  }
-}</style>
-<body>
-  <div class="website-container">
-
-    <!-- Home Section Starts -->
-    <section class="home" id="home">
-      <nav class="main-navbar">
-        <a href="index.html" class="logo">
-          <img src="images/home/logo.png" width="100px">
-        </a>
-        <ul class="nav-list">
+    <!-- Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-6BRW50QJFG"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "G-6BRW50QJFG");
+    </script>
+  </head>
+  <body>
+    <div class="website-container">
+      <!-- Navbar -->
+      <section class="home" id="home" style="background-color: #ffffff">
+        <nav class="main-navbar">
+          <a href="index.html" class="logo">
+            <img src="images/home/logo.png" width="100px" alt="Logo" />
+          </a>
+          <ul class="nav-list">
             <li><a href="index.html">Kreu</a></li>
             <li><a href="index.html#courses">Kurset</a></li>
             <li><a href="deget.html">Pikat</a></li>
             <li><a href="galeria.html">Galeria</a></li>
-            <li><a href="index.html#rrethnesh">Rreth Nesh</a></li>
+            <li><a href="./Pages/rrethNesh.html">Rreth Nesh</a></li>
             <li><a href="kontakt.html">Kontakt</a></li>
             <li><a href="index.html#kliente">Kliente</a></li>
             <li><a href="staficv.html">Puno me ne</a></li>
-
-            <!-- Social Media (only visible on mobile) -->
+            <!-- Mobile socials -->
             <li class="mobile-socials">
-              <a href="https://www.instagram.com/newwisdomelbasan/" target="_blank"
+              <a
+                href="https://www.instagram.com/newwisdomelbasan/"
+                target="_blank"
                 ><i class="fab fa-instagram"></i
               ></a>
-              <a href="https://api.whatsapp.com/send/?phone=355674474166&text=fff&type=phone_number&app_absent=0" target="_blank"
+              <a
+                href="https://api.whatsapp.com/send/?phone=355674474166"
+                target="_blank"
                 ><i class="fab fa-whatsapp"></i
               ></a>
               <a href="https://www.tiktok.com/@newisdomcenter" target="_blank"
@@ -79,87 +67,377 @@
               ></a>
             </li>
           </ul>
-        <a href="#" class="get-started-btn-container">
-          <button class="get-started-btn btn">Meso me shume</button>
-        </a>
-        <div class="menu-btn">
-          <span></span>
-        </div>
-      </nav>
-
-
-<!--   *** Teacher Section Starts ***   -->
-<section class="course_detail">
-  <div class="box">
-    <div class="spacer"></div>
-    <div class="course_content">
-      <div class="course_header">
-
-        <div class="course_image_container">
-          <img src="" alt="Course Image" class="course_image"/>
-        </div>
-
-        <div class="course_text">
-          <h2 class="course_title" style="color: blue">Course Title</h2>
-
-          <ul class="course-list"></ul>
-
-          <h3>Kohezgjatja e Kursit:</h3>
-          <p class="duration"></p>
-
-          <h3>Cfare perfiton ?</h3>
-          <p class="extra"></p>
-
-          <a href="index.html#courses">
-            <button class="teacher-btn btn">
-              <i class="fa fa-angle-double-left"></i> Kthehu
-            </button>
+          <a href="#" class="get-started-btn-container">
+            <button class="get-started-btn btn">Meso me shume</button>
           </a>
-
-          <a href="kontakt.html">
-            <button class="teacher-btn btn">
-              <i class="fa fa-sign-in"></i> Regjistrohu
-            </button>
-          </a>
+          <div class="menu-btn"><span></span></div>
+        </nav>
+        <!-- Bootstrap Carousel -->
+        <div
+          id="carouselExampleAutoplaying"
+          class="carousel slide"
+          data-bs-ride="carousel">
+          <div class="carousel-title-overlay">
+            <h1>KURSE KOMPJUTER</h1>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img
+                src="images/stock-photos/Kompjuter1.png"
+                class="d-block w-100"
+                alt="Slide 1" />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="images/stock-photos/Kompjuter2.png"
+                class="d-block w-100"
+                alt="Slide 2" />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="images/stock-photos/Kompjuter3.png"
+                class="d-block w-100"
+                alt="Slide 3" />
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleAutoplaying"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleAutoplaying"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
         </div>
-      </div>
+        <!-- Course Section -->
+        <section class="course_detail container">
+          <div class="row align-items-start">
+            <!-- Left: Card with course info -->
+            <div class="col-lg-6 mb-4">
+              <div
+                class="card shadow-sm p-3 h-100"
+                style="background-color: #bed0ee">
+                <div class="card-body" style="color: #0a025f">
+                  <img
+                    src="images/stock-photos/Kompjuter.jpg"
+                    width="100%"
+                    class="card-img-details" />
+                  <h2 class="card-title course_title pt-5">Course Title</h2>
+                  <hr />
+
+                  <h5>Kohezgjatja e Kursit:</h5>
+                  <p class="duration text-secondary"></p>
+
+                  <h5>Çfarë përfiton?</h5>
+                  <p class="extra text-secondary"></p>
+
+                  <h5>Programi:</h5>
+                  <ul class="course-list ps-3"></ul>
+                </div>
+
+                <div class="contact-icons" style="background-color: #bed0ee">
+                  <a
+                    href="https://www.instagram.com/newwisdomelbasan/"
+                    class="contact-icon"
+                    target="_blank"
+                    aria-label="Instagram">
+                    <i class="fab fa-instagram"></i>
+                  </a>
+                  <a
+                    href="https://api.whatsapp.com/send/?phone=355674474166&text=fff&type=phone_number&app_absent=0"
+                    class="contact-icon"
+                    target="_blank"
+                    aria-label="WhatsApp">
+                    <i class="fab fa-whatsapp"></i>
+                  </a>
+                  <a
+                    href="tel:355674474166"
+                    class="contact-icon"
+                    aria-label="Phone">
+                    <i class="fas fa-phone"></i>
+                  </a>
+                  <a
+                    href="https://www.tiktok.com/@newisdomcenter"
+                    class="contact-icon"
+                    target="_blank"
+                    aria-label="Tik Tok">
+                    <i class="fa-brands fa-tiktok"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Right: Pershkrimi i kursit -->
+            <div class="col-lg-6">
+              <div class="container">
+                <h3 class="fw-bold mb-3" style="color: #0a025f">
+                  Përshkrimi i Kursit
+                </h3>
+                <hr />
+
+                <p class="description text-secondary"></p>
+
+                <p
+                  style="color: #0a025f"
+                  class="long-description text-secondary"></p>
+              </div>
+            </div>
+
+            <
+            <section class="test-section" style="background-color: #ffffff">
+              <div class="test-wrapper">
+                <div class="test-text">
+                  <div class="test-spacer"></div>
+
+                  <div
+                    class="d-flex flex-column flex-md-row align-items-center">
+                    <img
+                      src="images/galeria/Certifikate+TestK.DNG"
+                      alt="Test Logo"
+                      class="responsive-img me-md-4 mb-3 mb-md-0"
+                      style="
+                        border-color: #0a025f;
+                        border-width: 10px;
+                        border-style: solid;
+                      " />
+
+                    <div
+                      class="testbox-container"
+                      style="background-color: #bed0ee">
+                      <div
+                        class="testbox-container text-center"
+                        style="
+                          padding: 20px;
+                          border-radius: 10px;
+                          background-color: #bed0ee;
+                        ">
+                        <h2 class="test-heading mb-3">
+                          Cfare perfshihet ne kurs ?
+                        </h2>
+                        <p style="color: #162399; padding-bottom: 20px">
+                          Ne New Wisdom Center, ne ofrojme nje eksperience
+                          mesimore te plote dhe te pasur per studentet
+                          tane.Zbuloni cfare perfshihet ne Nje Kurs Mesimi me
+                          ne:
+                        </p>
+
+                        <div
+                          class="d-flex flex-wrap justify-content-center gap-4">
+                          <div
+                            class="text-center"
+                            style="width: 120px; color: #ffffff">
+                            <i class="fa fa-certificate fa-2x d-block mb-2"></i>
+                            <p>Certifikatë</p>
+                          </div>
+                          <div
+                            class="text-center"
+                            style="width: 120px; color: #ffffff">
+                            <i class="fa fa-child fa-2x d-block mb-2"></i>
+                            <p>Evente dhe aktivitete rreth gjuhes se huaj</p>
+                          </div>
+                          <div
+                            class="text-center"
+                            style="width: 120px; color: #ffffff">
+                            <i
+                              class="fa fa-chalkboard-teacher fa-2x d-block mb-2"></i>
+                            <p>Projekte ne grup</p>
+                          </div>
+                          <div
+                            class="text-center"
+                            style="width: 120px; color: #ffffff">
+                            <i class="fa fa-film fa-2x d-block mb-2"></i>
+                            <p>Ora e kinemase ne gjuhe te huaj</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <div class="services-contents mt-5">
+              <h2 class="pt-3" style="color: #0a025f; text-align: center">
+                Kurse të tjera
+              </h2>
+              <hr />
+              <div class="row related-courses mt-3"></div>
+            </div>
+
+            <div class="d-flex gap-2 mt-3 pb-3">
+              <button
+                onclick="window.location.href='anglisht.html'"
+                class="btn btn-outline-primary">
+                <i class="fa fa-angle-double-left"></i> Kthehu
+              </button>
+              <button
+                onclick="window.location.href='kontakt.html'"
+                class="btn btn-primary teacher-btn">
+                <i class="fa fa-sign-in"></i> Regjistrohu
+              </button>
+            </div>
+          </div>
+        </section>
+      </section>
+
+      <!-- Footer -->
+      <section class="footer" id="footer">
+        <div class="footer-contents">
+          <div class="footer-col footer-col-1">
+            <div class="col-title">
+              <img src="images/home/logo.png" alt="Footer Logo" />
+            </div>
+            <div class="col-contents">
+              <p>
+                🎓 Dedikuar ofrimit te kurseve gjuhesore te standardit me te
+                larte, ne ju ndihmojme te zhvilloni aftesite tuaja gjuhesore per
+                sukses personal dhe profesional.
+              </p>
+              <p>
+                🕮 Me metoda inovative dhe mesues te kualifikuar, sigurojme nje
+                eksperience mesimore te perkushtuar dhe efektive. Bashkohuni me
+                ne per te ndertuar te ardhmen tuaj gjuhesore.
+              </p>
+            </div>
+          </div>
+
+          <div class="footer-col footer-col-2">
+            <div class="col-title">
+              <h3>Kontakt</h3>
+            </div>
+            <div class="col-contents">
+              <div class="contact-row">
+                <span>Adresat</span>
+                <span>📌Tirane,Kombinat - Prane shkolles Betim Muco</span>
+                <span>📌Elbasan - Rruga Egnatia,Lagja pas kalase</span>
+              </div>
+              <div class="contact-row">
+                <span>Telefon</span>
+                <span
+                  >📞 Tirane,Kombinat
+                  <a
+                    href="tel:+355674474166"
+                    style="text-decoration: none; color: white"
+                    >+355 67 447 4166</a
+                  ></span
+                >
+                <span
+                  >📞 Elbasan
+                  <a
+                    href="tel:+355673710166"
+                    style="text-decoration: none; color: white"
+                    >+355 67 371 0166</a
+                  ></span
+                >
+              </div>
+              <div class="contact-row">
+                <span>Instagram</span>
+                <span>🅾 @newwisdomelbasan</span>
+                <span>🅾 @newwisdomkombinat</span>
+              </div>
+              <div class="contact-row">
+                <span>Email</span>
+                <span>✉ newwisdomkombinat@gmail.com</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="footer-col footer-col-3">
+            <div class="col-title">
+              <h3>Zbuloni me shume!</h3>
+            </div>
+            <div class="col-contents">
+              <a href="index.html">Kreu</a>
+              <a href="index.html#courses">Kurset</a>
+              <a href="kontakt.html">Kontakt</a>
+              <a href="galeria.html">Rreth Nesh</a>
+              <a href="index.html#kliente">Kliente</a>
+            </div>
+          </div>
+        </div>
+        <div class="copy-rights">
+          <p>Created By <b>Altea K.</b> All Rights Reserved</p>
+        </div>
+      </section>
     </div>
-  </div>
-</section>
 
+    <!-- Bootstrap 5 JS -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      crossorigin="anonymous"></script>
 
-    <!-- JS: Dynamic Course Population -->
+    <!-- Course Data Script -->
     <script>
-    const coursesData = {
-  	fillestar: {
-    title: "Kompjuter Nivelet Baze",
-    img: "./images/courses/kompjuter.jpeg",
-    duration: "10 javë (3 orë në javë)",
-    extra: "Përmirësoni aftësitë ne perdorimin e kompjuterit dhe programeve me te perdorura te diteve te sotme!",
-    list: [
-      " Paketa Office: Word, PowerPoint, Excel",
-	  "Internet, Email",
-	  "Mesoni programet me te perdorura ne bote ne tregun e punes, ne shkolle dhe jeten e perditshme",
-	  "Orare Fleksibel , Grup ose Individual",
-	  "Pajisje me certifikate në fund të çdo niveli"
-    ]
-  }
-};
-
-
+      const coursesData = {
+        kompjuter: {
+          title: "Kurse Kompjuter per nivelet baze",
+          duration: "60–80 seanca (3 orë në javë)",
+          description:
+            "Ky kurs është projektuar për fëmijët që fillojnë të mësojnë anglishten. Ai fokusohet në zhvillimin e aftësive bazë të dëgjimit, të folurit, të lexuarit dhe të shkruarit në një mjedis mbështetës dhe argëtues.",
+          extra: "Shumë lojëra, aktivitete praktike dhe metoda argëtuese.",
+          list: [
+            "Mësojnë fjalorin bazë për jetën e përditshme.",
+            "Praktikojnë të folurin me ushtrime në grup.",
+            "Kuptojnë këngë, tregime dhe video edukative.",
+          ],
+          longDescription: [
+            "Ky kurs është projektuar për fëmijët që hedhin hapat e parë në gjuhën angleze.",
+            "Metodat tona kombinojnë lojën me mësimin për t’i mbajtur fëmijët të motivuar.",
+          ],
+          relatedCourses: [
+            {
+              id: "fillestarRritur",
+              title: "Kurse Anglisht Fillestar për të Rritur",
+              desc: "Ky kurs është ideal për të rriturit që sapo fillojnë të mësojnë anglishten. Ai zhvillon të gjitha aftësitë bazë gjuhësore: të dëgjuarit, të folurit, të lexuarit dhe të shkruarit. Studentët mësojnë të përdorin fjalor bazik dhe të formojnë fjali të thjeshta në situata të përditshme.",
+            },
+            {
+              id: "mesatar",
+              title: "Kurse Anglisht Mesatar B1-B2",
+              desc: "Ky nivel është për ata që kanë njohuri bazike dhe duan të flasin me më shumë rrjedhshmëri. Kursi zhvillon aftësitë e dëgjimit, të folurit, të lexuarit dhe të shkruarit në mënyrë më të avancuar. ",
+            },
+            {
+              id: "advanced",
+              title: "Kurse Anglisht Advanced C1-C2",
+              desc: "Kursi Avancuar është për përdoruesit që synojnë të arrijnë rrjedhshmëri të lartë dhe përdorim profesional të gjuhës. Ai përqendrohet në zhvillimin e aftësive të shprehjes së saktë, leximit të teksteve komplekse dhe shkrimit profesional.",
+            },
+            {
+              id: "online",
+              title: "Kurse Anglisht Online A1-C2",
+              desc: "Kursi Online mbulon të gjitha nivelet, nga fillestar deri në avancuar, duke ofruar fleksibilitet për të mësuar nga kudo. Programi zhvillon të gjitha aftësitë gjuhësore, përfshin gramatikë, fjalor dhe shqiptim, dhe përdor metoda interaktive online.",
+            },
+          ],
+        },
+      };
 
       // Get course from URL query
       const params = new URLSearchParams(window.location.search);
-      const courseId = params.get("course");
+      const courseId = params.get("course") || "kompjuter";
       const course = coursesData[courseId];
 
       if (course) {
-        document.querySelector(".course_image").src = course.img;
         document.querySelector(".course_title").textContent = course.title;
         document.querySelector(".duration").textContent = course.duration;
+        document.querySelector(".description").textContent = course.description;
         document.querySelector(".extra").textContent = course.extra;
 
-        // Fill the list
+        // Long description
+        const longDescContainer = document.querySelector(".long-description");
+        longDescContainer.innerHTML = "";
+        course.longDescription.forEach((p) => {
+          const para = document.createElement("p");
+          para.textContent = p;
+          longDescContainer.appendChild(para);
+        });
+
+        // Lista e kursit
         const listContainer = document.querySelector(".course-list");
         listContainer.innerHTML = "";
         course.list.forEach((item) => {
@@ -167,227 +445,37 @@
           li.textContent = item;
           listContainer.appendChild(li);
         });
+
+        // Kurset e tjera
+        const relatedContainer = document.querySelector(".related-courses");
+        relatedContainer.innerHTML = "";
+        if (course.relatedCourses) {
+          course.relatedCourses.forEach((rel) => {
+            const col = document.createElement("div");
+            col.className = "col-md-6 mb-4";
+            col.innerHTML = `
+                    <a href="KompjuterDetaje.html?course=${rel.id}" style="text-decoration:none;color:inherit">
+                      <div class="service-box h-100 p-3 shadow">
+                        <div class="service-icon">
+                          <img src="images/brand-logos/StudyBook.png" width="50px" />
+                        </div>
+                        <div class="service-desc">
+                          <h2>${rel.title}</h2>
+                          <p>${rel.desc}</p>
+                        </div>
+                      </div>
+                    </a>
+                  `;
+            relatedContainer.appendChild(col);
+          });
+        }
       } else {
-        document.querySelector(".course_text").innerHTML =
-          "<p>Course not found.</p>";
+        document.querySelector(".course_title").textContent =
+          "Course not found.";
       }
     </script>
 
-  <style>/* Box container */
-	.box {
-	  width: 80%;
-	  margin: 0 auto;
-	}
-	
-	/* Spacer for mobile adjustments */
-	.spacer {
-	  height: 100px; /* Adds 100px of space */
-	}
-	
-	/* The main content block */
-	.course_content {
-	  background-color: white;
-	  padding: 20px;
-	  border-radius: 8px;
-	  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-	}
-	
-	.course_header {
-	  display: flex;
-	  justify-content: space-between;
-	  align-items: flex-start;
-	  gap: 20px;
-	  margin-bottom: 40px;
-	}
-	
-	.course_text {
-	  flex: 1;
-	  max-width: 60%;  /* Allow the text to take up to 60% of the container width */
-	}
-	
-	.course_image_container {
-	  flex: 1;
-	  max-width: 40%;  /* Allow the image to take up to 40% of the container width */
-	}
-	
-	.course_image {
-	  width: 100%;
-	  height: auto;
-	  border-radius: 8px;
-	  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-	}
-	
-	/* Course summary text */
-	.course_summary {
-	  font-size: 1.1rem;
-	  color: #555;
-	  line-height: 1.5;
-	  max-width: 900px;
-	  margin: 0 auto;
-	  margin-bottom: 40px;
-	}
-	
-	/* Course content section */
-	.course_content h3 {
-	  font-size: 1.5rem;
-	  color: #222;
-	  margin-bottom: 10px;
-	}
-	
-	.course_content ul {
-	  list-style-type: none;
-	  padding-left: 20px;
-	  margin-bottom: 20px;
-	}
-	
-	.course_content ul li {
-	  margin-bottom: 10px;
-	  font-size: 1.1rem;
-	}
-	
-	.course_content p {
-	  font-size: 1rem;
-	  color: #666;
-	  margin-bottom: 20px;
-	}
-	
-	/* Button to go back to course overview */
-	.back-btn {
-	  display: inline-block;
-	  padding: 12px 30px;
-	  font-size: 1.1rem;
-	  color: white;
-	  background-color: #007bff;
-	  border-radius: 5px;
-	  text-decoration: none;
-	  text-align: center;
-	  margin-top: 20px;
-	  transition: background-color 0.3s;
-	}
-	
-	.back-btn:hover {
-	  background-color: #0056b3;
-	}
-	
-	/* Mobile Responsiveness */
-	@media (max-width: 768px) {
-	  .course_header {
-		flex-direction: column;
-		align-items: center;
-	  }
-	
-	  .course_text {
-		max-width: 100%;
-	  }
-	
-	  .course_image_container {
-		max-width: 100%;
-		margin-top: 20px;
-	  }
-	  .box {
-	  width: 80%;
-	  margin: 0 auto;
-	  height:50%
-	}
-	.spacermobile {
-	  height: 100px; /* Adds 100px of space */
-	}
-	}
-	</style>
-
-	</div>
-</section>
-<!--   *** Courses Section Ends ***   -->
-
-    <!-- Footer Section Starts -->
-	<section class="footer" id="footer">
-			<div class="footer-contents">
-			
-			<div class="footer-col footer-col-1">
-				<div class="col-title">
-					<img src="images/home/logo.png">
-				</div>
-				<div class="col-contents">
-					<p>🎓 Dedikuar ofrimit te kurseve gjuhesore te standardit me te larte, ne ju ndihmojme te zhvilloni aftesite tuaja gjuhesore per sukses personal dhe profesional. </p>
-					<p>🕮 Me metoda inovative dhe mesues te kualifikuar, sigurojme nje eksperience mesimore te perkushtuar dhe efektive. Bashkohuni me ne per te ndertuar te ardhmen tuaj gjuhesore.</p>
-				</div>
-			</div>
-	
-			<div class="footer-col footer-col-2">
-				<div class="col-title">
-					<h3>Kontakt</h3>
-				</div>
-				<div class="col-contents">
-					<div class="contact-row">
-						<span>Adresat</span>
-						<span>📌Tirane,Kombinat - Prane shkolles Betim Muco</span>
-						<span>📌Elbasan - Rruga Egnatia,Lagja pas kalase</span>
-	
-					</div>
-					<div class="contact-row">
-						<span>Telefon</span>
-						<span
-						  >📞 Tirane,Kombinat
-						  <a
-							href="tel:+355674474166"
-							style="text-decoration: none; color: white"
-						  >
-							+355 67 447 4166</a
-						  ></span
-						>
-						<span
-						  >📞 Elbasan
-						  <a
-							href="tel:+355673710166"
-							style="text-decoration: none; color: white"
-							>+355 67 371 0166</a
-						  >
-						</span>
-					  </div>
-					<div class="contact-row">
-						<span>Instagram</span>
-						<span>🅾 @newwisdomelbasan</span>
-						<span>🅾 @newwisdomkombinat</span>
-	
-					</div>
-					<div class="contact-row">
-						<span>Email</span>
-						<span>✉ newwisdomkombinat@gmail.com</span>
-					</div>
-				</div>
-			</div>
-	
-			<div class="footer-col footer-col-3">
-				<div class="col-title">
-					<h3>Zbuloni me shume!</h3>
-				</div>
-				<div class="col-contents">
-					<a href="index.html">Kreu</a>
-					<a href="index.html#courses">Kurset</a>
-					<a href="kontakt.html">Kontakt</a>
-					<a href="galeria.html">Rreth Nesh</a>
-					<a href="index.html#kliente">Kliente</a>
-				</div>
-			</div>
-		</div>
-		<!--   === Footer Contents Ends ===   -->
-		<div class="copy-rights">
-			<p>Created By <b>Altea K.</b> All Rights Reserved</p>
-		</div>
-	
-	</section>
-    <!-- Footer Section Ends -->
-
-  </div>
-  <!-- Website Container Ends -->
-
-  <!-- Link To JQuery -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
-
-  <!-- Link To Owl Carousel -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-
-  <!-- Link To Custom Script File -->
-  <script type="text/javascript" src="script.js"></script>
-</body>
+    <!-- Custom JS -->
+    <script type="text/javascript" src="script.js"></script>
+  </body>
 </html>
