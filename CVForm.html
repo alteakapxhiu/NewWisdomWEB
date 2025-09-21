@@ -485,42 +485,44 @@
   const storage = getStorage(app);
 
   document.getElementById("cvForm").addEventListener("submit", async (e) => {
-    e.preventDefault();
+  e.preventDefault();
 
-    const fullName = document.getElementById("fullName").value;
-    const email = document.getElementById("email").value;
-    const phone = document.getElementById("phone").value;
-    const cvFile = document.getElementById("inputGroupFile02").files[0];
+  const fullName = document.getElementById("fullName").value;
+  const email = document.getElementById("email").value;
+  const phone = document.getElementById("phone").value;
+  const cvFile = document.getElementById("inputGroupFile02").files[0];
 
-    if (!cvFile) {
-      alert("Please select a CV file to upload!");
-      return;
-    }
+  if (!cvFile) {
+    alert("Please select a CV file to upload!");
+    return;
+  }
 
-    try {
-      // Upload CV to Firebase Storage
-      const storageRef = ref(storage, `cvs/${cvFile.name}`);
-      await uploadBytes(storageRef, cvFile);
+  try {
+    // 1. Upload CV to Firebase Storage
+    const storageRef = ref(storage, `cvs/${cvFile.name}`);
+    await uploadBytes(storageRef, cvFile);
+    const cvURL = await getDownloadURL(storageRef);
 
-      // Get download URL
-      const cvURL = await getDownloadURL(storageRef);
+    // 2. Save to Firestore
+    await addDoc(collection(db, "submissions"), {
+      fullName,
+      email,
+      phone,
+      cvURL,
+      timestamp: new Date()
+    });
 
-      // Save metadata to Firestore
-      await addDoc(collection(db, "submissions"), {
-        fullName,
-        email,
-        phone,
-        cvURL,
-        timestamp: new Date()
-      });
+    // 3. Send email via EmailJS
+    await emailjs.sendForm('service_rcjfdn8', 'template_e1z1s34', e.target);
 
-      alert("✅ Your CV was successfully submitted!");
-      e.target.reset();
-    } catch (err) {
-      console.error("❌ Error submitting CV:", err);
-      alert("Something went wrong. Please try again.");
-    }
-  });
+    alert("✅ Your CV was successfully submitted and emailed!");
+    e.target.reset();
+  } catch (err) {
+    console.error("❌ Error submitting CV:", err);
+    alert("Something went wrong. Please try again.");
+  }
+});
+
 </script>
 
               
@@ -685,7 +687,12 @@
 
 </div>
 <!-- Website Container Ends -->
+<script type="text/javascript" src="https://cdn.emailjs.com/sdk/3.2.0/email.min.js"></script>
+<script type="text/javascript">
+  emailjs.init("CCLcdDbqI8WgsFUoA"); 
+</script>
 
+  
 <!-- Link To JQuery -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
 
@@ -694,5 +701,6 @@
 
 <!-- Link To Custom Script File -->
 <script type="text/javascript" src="script.js"></script>
+
 </body>
 </html>
