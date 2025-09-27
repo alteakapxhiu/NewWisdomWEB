@@ -1,0 +1,126 @@
+html {
+  scroll-behavior: smooth;
+
+  /* Variables For Storing Colors */
+  --primary-clr: #1e18d2;
+  --primary-medium-clr: #8caef7;
+  --primary-light-clr: #bed0ee;
+  --bg-clr-1: #ffffff;
+  --dark-heading-clr: #232d39;
+  --dark-text-clr: #6c757d;
+  --light-heading-clr: #efefef;
+  --light-text-clr: #cecece;
+}
+.animation {
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+.courses-title {
+  font-size: 2.8rem;
+  font-weight: 500;
+  color: #0e0ecd;
+  margin-bottom: 10px;
+  position: relative;
+  display: inline-block;
+  text-transform: uppercase;
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+.courses-title::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 4px;
+  background: #0e0ecd;
+  margin: 10px auto 0;
+  border-radius: 2px;
+}
+
+.courses-intro {
+  font-size: 1.2rem;
+  color: #333;
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 1.6;
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+/* Efekt i lehtë fade-in */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Për mobile */
+@media (max-width: 768px) {
+  .courses-title {
+    font-size: 2rem;
+  }
+  .courses-intro {
+    font-size: 1rem;
+    padding: 0 10px;
+  }
+}
+
+.instructor-container {
+  max-width: 2000px;
+  margin: 0 auto;
+}
+
+.instructor-content {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.instructor-image {
+  padding: 2%;
+  width: 25%;
+}
+
+.instructor-text {
+  flex: 1;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .instructor-content {
+    flex-direction: column;
+    text-align: center;
+  }
+  .instructor-container {
+    max-width: 2000px;
+    margin: 0 auto;
+    margin-top: 25%;
+  }
+
+  .instructor-image {
+    width: 60%;
+    margin-top: 5%;
+  }
+
+  .teacher-btn {
+    margin: 10px 0;
+  }
+}
+.course-card {
+  display: none; /* Hide all courses by default */
+}
+.course-card.visible {
+  display: block; /* Show only visible courses */
+  color: white;
+}
+.cardposition {
+  margin-top: -5%;
+}
+@media (max-width: 768px) {
+  .cardposition {
+    margin-top: -20%;
+  }
+}
