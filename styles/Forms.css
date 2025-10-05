@@ -296,6 +296,9 @@ a.ssolink {
     font-size: 25px;
   }
 }
+.main-navbar .mobile-socials a i {
+  color: white;
+}
 
 @media screen and (max-width: 480px) {
   .contact-icon {

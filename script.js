@@ -1,4 +1,4 @@
-// Script File
+
 
 // Home Section Starts
 var menuBtn = document.querySelector('.main-navbar .menu-btn');

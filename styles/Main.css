@@ -441,14 +441,10 @@ CARDS
   border-radius: 6px;
 }
 
-/* ============ Card Profile ============ */
-
 .card-profile {
   margin-top: 30px;
   text-align: center;
 }
-
-/* ============ Card Category ============ */
 
 .category {
   position: relative;
@@ -463,8 +459,6 @@ CARDS
   top: 2px;
   margin-right: 5px;
 }
-
-/* ============ Card Author ============ */
 
 .card .author .avatar {
   width: 36px;
@@ -482,8 +476,6 @@ CARDS
 .card .author a .ripple-cont {
   display: none;
 }
-
-/* ============ Card Product ============ */
 
 .card-product {
   margin-top: 30px;
@@ -526,8 +518,6 @@ CARDS
   font-weight: 700;
   font-family: "Roboto Slab", "Times New Roman", serif;
 }
-
-/* ============ Card Testimonial ============ */
 
 .card-testimonial {
   margin-top: 0;
@@ -587,8 +577,6 @@ CARDS
   margin-bottom: -50px;
 }
 
-/* ============ Text Color ============ */
-
 .text-warning {
   color: #ff9800;
 }
@@ -616,10 +604,6 @@ CARDS
 .text-gray {
   color: #888;
 }
-
-/*---------------------------------------------------------------------- /
-BUTTONS
------------------------------------------------------------------------ */
 
 .btn {
   display: inline-block;
@@ -682,8 +666,6 @@ BUTTONS
   width: 20px;
 }
 
-/* Button Info */
-
 .btn.btn-info {
   background-color: #00bcd4;
   color: #ffffff;
@@ -696,8 +678,6 @@ BUTTONS
     0 4px 23px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 188, 212, 0.2);
 }
 
-/* Button Danger */
-
 .btn.btn-danger {
   background-color: #f44336;
   color: #ffffff;
@@ -709,8 +689,6 @@ BUTTONS
   box-shadow: 0 14px 26px -12px rgba(244, 67, 54, 0.42),
     0 4px 23px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(244, 67, 54, 0.2);
 }
-
-/* Button Warning */
 
 .btn.btn-warning.btn-simple:hover,
 .btn.btn-warning.btn-simple:focus,
@@ -731,8 +709,6 @@ BUTTONS
   box-shadow: 0 2px 2px 0 rgba(255, 152, 0, 0.14),
     0 3px 1px -2px rgba(255, 152, 0, 0.2), 0 1px 5px 0 rgba(255, 152, 0, 0.12);
 }
-
-/* Button Rose */
 
 .btn.btn-rose.btn-simple:hover,
 .btn.btn-rose.btn-simple:focus,
@@ -931,7 +907,7 @@ SOCIAL MEDIA BUTTONS
 .service-box {
   display: flex;
   flex-direction: column;
-  align-items: center; /* qendron horizontalisht gjithçka brenda */
+  align-items: center;
   text-align: center;
 }
 
@@ -939,6 +915,15 @@ SOCIAL MEDIA BUTTONS
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%; /* e bën të shtrihet në gjithë kutinë */
-  margin-bottom: 10px; /* opsionale, pak hapësirë nga teksti */
+  width: 100%;
+  margin-bottom: 10px;
+}
+.responsive-image {
+  width: 100%;
+  height: auto;
+  max-height: 300px;
+  display: block;
+  margin: 0 auto;
+  border-radius: 10px;
+  object-fit: cover;
 }
