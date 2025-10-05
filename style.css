@@ -530,7 +530,7 @@ section.services {
 /*   === Courses Section Styling Starts ===   */
 section.courses {
   width: 100%;
-  padding: 70px 8% 20px;
+  padding: 100px 8% 20px;
 }
 .courses .section-header {
   position: relative;
@@ -699,24 +699,8 @@ section.categories {
 /*   === Teacher Section Styling Starts ===   */
 section.instructor {
   width: 100%;
-  padding: 80px 8% 20px;
-  box-sizing: border-box; /* ensures padding doesn't affect width */
+  padding: 100px 8% 20px;
 }
-
-/* Medium screens (tablets/laptops) */
-@media only screen and (min-width: 769px) and (max-width: 1200px) {
-  section.instructor {
-    padding: 20px 8% 20px;
-  }
-}
-
-/* Small screens (phones) */
-@media only screen and (max-width: 768px) {
-  section.instructor {
-    padding: 10px 5% 20px;
-  }
-}
-
 .instructor .instructor-container {
   width: 100%;
   padding: 70px 8%;
@@ -1230,51 +1214,56 @@ section.footer {
 
 /*   === Media Query Starts ===   */
 @media (max-width: 968px) {
+  /* Home Section */
   .main-navbar .menu-btn {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-left: 0;
+    margin-left: 40px;
     z-index: 101;
   }
-
+  .main-navbar .menu-btn.active span,
+  .main-navbar .menu-btn.active span::before,
+  .main-navbar .menu-btn.active span::after {
+    width: 100%;
+  }
+  .main-navbar .menu-btn.active span::before {
+    transform: rotate(45deg) translateY(0px);
+  }
+  .main-navbar .menu-btn.active span::after {
+    transform: rotate(-45deg) translateY(0px);
+  }
+  .main-navbar .menu-btn.active span {
+    background-color: transparent;
+  }
   .main-navbar .nav-list {
     position: fixed;
     width: 100%;
     height: 100vh;
     top: 0;
+    /*right: 0;*/
     right: -100%;
     display: flex;
     flex-direction: column;
-    justify-content: center; /* vertical centering */
-    align-items: center;     /* horizontal centering */
-    text-align: center;
+    align-items: center;
     background-color: var(--primary-clr);
     transition: right 0.3s cubic-bezier(0.15, 0.61, 0.94, 0.25);
     z-index: 100;
-    padding: 0;
   }
-
   .main-navbar .nav-list.active {
     right: 0;
   }
-
-  /* Reduce vertical spacing between links */
   .main-navbar .nav-list li {
-    margin: 8px 0;  /* closer together */
+    margin: 25px 0px 0px;
   }
-
-  /* Remove extra top margin on first item */
   .main-navbar .nav-list li:nth-child(1) {
-    margin-top: 0;
+    margin-top: 180px;
   }
-
   .main-navbar .nav-list li a {
     font-size: 20px;
-    letter-spacing: 0.5px;
+    letter-spacing: 1px;
   }
-}
-
+  .main-navbar .get-started-btn-container {
+    margin-left: auto;
+  }
   .home .banner {
     flex-direction: column-reverse;
     justify-content: flex-start;
