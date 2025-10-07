@@ -12,18 +12,15 @@ html {
   --light-text-clr: #cecece;
 }
 
+/* Locations Container */
 .locations-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 20px;
   padding: 0 10px;
-  padding-bottom: 50px;
 }
-@media (max-width: 768px) {
-  .locations-container {
-    gap: 90px; 
-}
+
 .location-box {
   width: 39%;
   border-radius: 10px;
