@@ -3,7 +3,7 @@
   padding: 0;
   body: var(--primary-clr);
   box-sizing: border-box;
-  font-family: "Roboto", sans-serif;
+  font-family: "Montserrat", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 html {
   scroll-behavior: smooth;
@@ -458,6 +458,7 @@ section.partners {
 /*   === Partners Section Styling Ends ===   */
 
 /*   === Services Section Styling Starts ===   */
+
 section.services {
   width: 100%;
   padding: 100px 8% 20px;
@@ -699,7 +700,7 @@ section.categories {
 /*   === Teacher Section Styling Starts ===   */
 section.instructor {
   width: 100%;
-  padding: 100px 8% 20px;
+  padding: 50px 8% 20px;
 }
 .instructor .instructor-container {
   width: 100%;
@@ -1380,6 +1381,10 @@ section.footer {
   font-weight: 500;
   padding-bottom: 4%;
 }
+.fontcolor {
+  text-align: center;
+  padding-bottom: 5%;
+}
 
 .test-section {
   padding: 30px 0; /* Smaller vertical space */
@@ -1614,52 +1619,6 @@ section.footer {
     max-height: 30vh;
     width: 100%;
     object-fit: cover;
-  }
-}
-
-.contact-icons {
-  display: flex;
-  justify-content: flex-start;
-  flex-wrap: wrap;
-  gap: 20px;
-  padding: 20px;
-  background-color: #fff;
-}
-
-.contact-icon {
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  background-color: #fff;
-  border: 2px solid #2600ff;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #2600ff;
-  font-size: 25px;
-  text-decoration: none;
-  transition: transform 0.3s, background-color 0.3s, color 0.3s;
-}
-
-.contact-icon:hover {
-  background-color: #2600ff;
-  color: #fff;
-  transform: scale(1.1);
-}
-
-@media screen and (max-width: 768px) {
-  .contact-icon {
-    width: 40px;
-    height: 40px;
-    font-size: 25px;
-  }
-}
-
-@media screen and (max-width: 480px) {
-  .contact-icon {
-    width: 45px;
-    height: 45px;
-    font-size: 25px;
   }
 }
 
@@ -1939,7 +1898,7 @@ section.footer {
 
 @media (max-width: 992px) {
   .carousel-logo {
-    top: 10%;
+    top: 15%;
   }
   .carousel-logo img {
     width: 18vw;
@@ -1950,7 +1909,7 @@ section.footer {
 
 @media (max-width: 576px) {
   .carousel-logo {
-    top: 70%;
+    top: 75%;
   }
   .carousel-logo img {
     width: 20vw;

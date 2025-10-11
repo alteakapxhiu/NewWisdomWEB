@@ -1,3 +1,24 @@
+* {
+  margin: 0;
+  padding: 0;
+  body: var(--primary-clr);
+  box-sizing: border-box;
+  font-family: "Montserrat", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+html {
+  scroll-behavior: smooth;
+
+  /* Variables For Storing Colors */
+  --primary-clr: #1e18d2;
+  --primary-medium-clr: #8caef7;
+  --primary-light-clr: #bed0ee;
+  --bg-clr-1: #ffffff;
+  --dark-heading-clr: #232d39;
+  --dark-text-clr: #6c757d;
+  --light-heading-clr: #efefef;
+  --light-text-clr: #cecece;
+}
+
 .card-custom {
   overflow: hidden;
   min-height: 450px;
@@ -384,19 +405,29 @@ CARDS
 
 .card-blog {
   margin-top: 30px;
+  border-color: var(--primary-clr);
 }
 
 .card-blog .card-caption {
   margin-top: 5px;
 }
-
+.category-text {
+  display: inline-block;
+  background: var(--primary-light-clr);
+  color: var(--primary-clr);
+  padding: 10px 10px;
+  border-radius: 18px;
+  font-size: 1rem;
+  box-shadow: 0 2px 8px rgba(44, 62, 80, 0.07);
+  margin: 8px 0;
+}
 .card-blog .card-image + .category {
   margin-top: 20px;
 }
 
 .card-raised {
-  box-shadow: 0 16px 38px -12px rgba(0, 0, 0, 0.56),
-    0 4px 25px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 16px 38px -12px rgba(1, 6, 101, 0.56),
+    0 4px 25px 0px rgba(3, 20, 149, 0.12), 0 8px 10px -5px rgba(8, 64, 230, 0.2);
 }
 
 /* ============ Card Background ============ */
@@ -436,7 +467,6 @@ CARDS
   display: block;
   left: 0;
   top: 0;
-  table: "";
   background-color: rgba(0, 0, 0, 0.56);
   border-radius: 6px;
 }
@@ -450,6 +480,8 @@ CARDS
   position: relative;
   line-height: 0;
   margin: 15px 0;
+  padding-bottom: 5%;
+  color: var(--primary-clr);
 }
 
 .card .category-social .fa {
@@ -512,11 +544,11 @@ CARDS
 .card-caption a {
   color: #333;
   text-decoration: none;
+  color: var(--primary-clr);
 }
 
 .card-caption {
   font-weight: 700;
-  font-family: "Roboto Slab", "Times New Roman", serif;
 }
 
 .card-testimonial {
@@ -577,32 +609,12 @@ CARDS
   margin-bottom: -50px;
 }
 
-.text-warning {
-  color: #ff9800;
-}
-
-.text-primary {
-  color: #9c27b0;
-}
-
-.text-danger {
-  color: #f44336;
-}
-
 .text-success {
-  color: #4caf50;
+  color: var(--primary-clr);
 }
 
 .text-info {
-  color: #00bcd4;
-}
-
-.text-rose {
-  color: #e91e63;
-}
-
-.text-gray {
-  color: #888;
+  color: var(--primary-clr);
 }
 
 .btn {
@@ -926,4 +938,8 @@ SOCIAL MEDIA BUTTONS
   margin: 0 auto;
   border-radius: 10px;
   object-fit: cover;
+}
+.header-title-text {
+  text-align: center;
+  padding-bottom: 10%;
 }
